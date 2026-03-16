@@ -1,0 +1,204 @@
+html, body {
+	font-size: 1.0em; 
+	font-family: 'Exo 2', sans-serif;
+	background: #ffffff;
+	}
+
+#title {
+	margin: auto;
+	display: block;
+	background-color: rgba(102,102,102,0.2);
+	border: solid;
+	border-width: 5px 0 5px 0;
+	border-color: #ffffff;
+	}
+	#title h1 {
+		color: #CC0000;
+		font-style: italic;
+		text-shadow: 0px 2px 3px #555555;
+		}
+	#title h2 {
+		color: #333333;
+		font-style: normal;
+		text-shadow: 0px 2px 3px #555555;
+		}
+
+#social {
+	margin: -68px 0 0 487px;
+	height: 32px; width: 110px;
+	list-style: none;
+	}
+	#social li {
+		float: left;
+		}
+	#social a {
+		display: block;
+		padding: 0 2px 0 2px;
+		}
+
+#navi1 {
+	margin: auto;
+	list-style: none;
+	}
+	#navi1 li {
+		float: left;
+		}
+	#navi1 a {
+		display: block;
+		line-height: 27px;
+		height: 28px;
+		text-align: center;
+		font-size: 1.2em;
+		font-weight: 400;
+		text-decoration: none;
+		color: #333333;
+		background-color: rgba(102,102,102,0.2);
+		border-bottom: solid;
+		border-bottom-color: #666666;
+		border-bottom-width: 7px;
+		}
+	#navi1 a:hover {
+		border-bottom: solid;
+		border-color: #CC0000;
+		border-width: 7px;
+		}
+	#active a {
+		border-bottom: solid;
+		border-color: #CC0000;
+		border-width: 7px;
+		}
+
+#navi2 {
+	margin: auto;
+	list-style: none;
+	}
+	#navi2 li {
+		float: left;
+		}
+	#navi2 a {
+		display: block;
+		line-height: 27px;
+		height: 28px;
+		text-align: center;
+		font-size: 1.2em;
+		font-weight: 400;
+		text-decoration: none;
+		color: #333333;
+		background-color: rgba(102,102,102,0.2);
+		border-bottom: solid;
+		border-bottom-color: #666666;
+		border-bottom-width: 7px;
+		}
+	#navi2 a:hover {
+		border-bottom: solid;
+		border-color: #CC0000;
+		border-width: 7px;
+		}
+	#active a {
+		border-bottom: solid;
+		border-color: #CC0000;
+		border-width: 7px;
+		}
+
+#buttons {
+	margin: auto;
+	list-style: none;
+	}
+	#buttons li {
+		float: left;
+		padding: 5px 0 5px 0;
+		}
+	#buttons a {
+		display: block;
+		line-height: 21px;
+		height: 23px;
+		text-align: center;
+		font-size: 1.0em;
+		font-weight: 400;
+		text-decoration: none;
+		color: #CC0000;
+		background-color: rgba(102,102,102,0.2);
+		border: none;
+		}
+	#buttons a:hover {
+		font-weight: 700;
+		}
+	#active a {
+		font-weight: 700;
+		}
+
+#content {
+	text-align: center;
+	display: block;
+	margin: auto;
+	padding: 2px 0 2px 0;
+	text-decoration: none;
+	color: #333333;
+	background-color: #ffffff;
+	border: none;
+	}
+		
+#footer {
+	margin: auto;
+	display: block;
+	text-align: center;
+	padding: 2px;
+	font-size: 0.8em;
+	font-weight: 400;
+	text-decoration: none;
+	color: #333333;
+	}
+
+table#schedule1 {
+	background: #fff;
+	width: 510px;
+	border-collapse: collapse;
+	text-align: center;
+	}
+table#schedule1 th {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #000000;
+	padding: 5px 5px;
+	border-bottom: 4px solid #cc0000;
+	}
+table#schedule1 td {
+	font-size: 0.9em;
+	color: #000000;
+	padding: 8px 0 8px 0;
+	border-bottom: 2px solid gray;
+	}
+	td a {
+		text-decoration: none;
+		color: #000;
+		}
+table#schedule1 tbody tr:hover td, td a:hover {
+	color: #cc0000;
+	}
+
+table#schedule2 {
+	background: #fff;
+	width: 300px;
+	border-collapse: collapse;
+	text-align: center;
+	}
+table#schedule2 th {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #000000;
+	padding: 5px 5px;
+	border-bottom: 4px solid #cc0000;
+	}
+table#schedule2 td {
+	font-size: 0.9em;
+	color: #000000;
+	padding: 8px 0 8px 0;
+	border-bottom: 2px solid gray;
+	}
+	td a {
+		text-decoration: none;
+		color: #000;
+		}
+table#schedule2 tbody tr:hover td, td a:hover {
+	color: #cc0000;
+	}

@@ -1,0 +1,5697 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta name="Excel Workbook Frameset">
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 9">
+<link rel=File-List href="./index_files/filelist.xml">
+<link rel=Edit-Time-Data href="./index_files/editdata.mso">
+<link rel=OLE-Object-Data href="./index_files/oledata.mso">
+<title>2008 Season Points</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Gary Patch</o:Author>
+  <o:LastAuthor>Server</o:LastAuthor>
+  <o:LastPrinted>2008-10-15T23:29:07Z</o:LastPrinted>
+  <o:Created>2008-06-09T02:36:27Z</o:Created>
+  <o:LastSaved>2008-11-15T23:51:27Z</o:LastSaved>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:DownloadComponents/>
+  <o:LocationOfComponents HRef="file:D:\msowc.cab"/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><![if !supportTabStrip]>
+<link id="shLink" href="./index_files/sheet001.htm">
+<link id="shLink" href="./index_files/sheet002.htm">
+<link id="shLink" href="./index_files/sheet003.htm">
+
+<link id="shLink">
+
+<script language="JavaScript">
+<!--
+ var c_lTabs=3;
+
+ var c_rgszSh=new Array(c_lTabs);
+ c_rgszSh[0] = "Year End Points";
+ c_rgszSh[1] = "Class Points";
+ c_rgszSh[2] = "Street &amp; Ladies Points";
+
+
+
+ var c_rgszClr=new Array(8);
+ c_rgszClr[0]="window";
+ c_rgszClr[1]="buttonface";
+ c_rgszClr[2]="windowframe";
+ c_rgszClr[3]="windowtext";
+ c_rgszClr[4]="threedlightshadow";
+ c_rgszClr[5]="threedhighlight";
+ c_rgszClr[6]="threeddarkshadow";
+ c_rgszClr[7]="threedshadow";
+
+ var g_iShCur;
+ var g_rglTabX=new Array(c_lTabs);
+
+function fnGetIEVer()
+{
+ var ua=window.navigator.userAgent
+ var msie=ua.indexOf("MSIE")
+ if (msie>0 && window.navigator.platform=="Win32")
+  return parseInt(ua.substring(msie+5,ua.indexOf(".", msie)));
+ else
+  return 0;
+}
+
+function fnBuildFrameset()
+{
+ var szHTML="<frameset rows=\"*,18\" border=0 width=0 frameborder=no framespacing=0>"+
+  "<frame src=\""+document.all.item("shLink")[0].href+"\" name=\"frSheet\" noresize>"+
+  "<frameset cols=\"54,*\" border=0 width=0 frameborder=no framespacing=0>"+
+  "<frame src=\"\" name=\"frScroll\" marginwidth=0 marginheight=0 scrolling=no>"+
+  "<frame src=\"\" name=\"frTabs\" marginwidth=0 marginheight=0 scrolling=no>"+
+  "</frameset></frameset><plaintext>";
+
+ with (document) {
+  open("text/html","replace");
+  write(szHTML);
+  close();
+ }
+
+ fnBuildTabStrip();
+}
+
+function fnBuildTabStrip()
+{
+ var szHTML=
+  "<html><head><style>.clScroll {font:8pt Courier New;color:"+c_rgszClr[6]+";cursor:default;line-height:10pt;}"+
+  ".clScroll2 {font:10pt Arial;color:"+c_rgszClr[6]+";cursor:default;line-height:11pt;}</style></head>"+
+  "<body onclick=\"event.returnValue=false;\" ondragstart=\"event.returnValue=false;\" onselectstart=\"event.returnValue=false;\" bgcolor="+c_rgszClr[4]+" topmargin=0 leftmargin=0><table cellpadding=0 cellspacing=0 width=100%>"+
+  "<tr><td colspan=6 height=1 bgcolor="+c_rgszClr[2]+"></td></tr>"+
+  "<tr><td style=\"font:1pt\">&nbsp;<td>"+
+  "<td valign=top id=tdScroll class=\"clScroll\" onclick=\"parent.fnFastScrollTabs(0);\" onmouseover=\"parent.fnMouseOverScroll(0);\" onmouseout=\"parent.fnMouseOutScroll(0);\"><a>&#171;</a></td>"+
+  "<td valign=top id=tdScroll class=\"clScroll2\" onclick=\"parent.fnScrollTabs(0);\" ondblclick=\"parent.fnScrollTabs(0);\" onmouseover=\"parent.fnMouseOverScroll(1);\" onmouseout=\"parent.fnMouseOutScroll(1);\"><a>&lt</a></td>"+
+  "<td valign=top id=tdScroll class=\"clScroll2\" onclick=\"parent.fnScrollTabs(1);\" ondblclick=\"parent.fnScrollTabs(1);\" onmouseover=\"parent.fnMouseOverScroll(2);\" onmouseout=\"parent.fnMouseOutScroll(2);\"><a>&gt</a></td>"+
+  "<td valign=top id=tdScroll class=\"clScroll\" onclick=\"parent.fnFastScrollTabs(1);\" onmouseover=\"parent.fnMouseOverScroll(3);\" onmouseout=\"parent.fnMouseOutScroll(3);\"><a>&#187;</a></td>"+
+  "<td style=\"font:1pt\">&nbsp;<td></tr></table></body></html>";
+
+ with (frames['frScroll'].document) {
+  open("text/html","replace");
+  write(szHTML);
+  close();
+ }
+
+ szHTML =
+  "<html><head>"+
+  "<style>A:link,A:visited,A:active {text-decoration:none;"+"color:"+c_rgszClr[3]+";}"+
+  ".clTab {cursor:hand;background:"+c_rgszClr[1]+";font:8pt Arial;padding-left:3px;padding-right:3px;text-align:center;}"+
+  ".clBorder {background:"+c_rgszClr[2]+";font:1pt;}"+
+  "</style></head><body onload=\"parent.fnInit();\" onselectstart=\"event.returnValue=false;\" ondragstart=\"event.returnValue=false;\" bgcolor="+c_rgszClr[4]+
+  " topmargin=0 leftmargin=0><table id=tbTabs cellpadding=0 cellspacing=0>";
+
+ var iCellCount=(c_lTabs+1)*2;
+
+ var i;
+ for (i=0;i<iCellCount;i+=2)
+  szHTML+="<col width=1><col>";
+
+ var iRow;
+ for (iRow=0;iRow<6;iRow++) {
+
+  szHTML+="<tr>";
+
+  if (iRow==5)
+   szHTML+="<td colspan="+iCellCount+"></td>";
+  else {
+   if (iRow==0) {
+    for(i=0;i<iCellCount;i++)
+     szHTML+="<td height=1 class=\"clBorder\"></td>";
+   } else if (iRow==1) {
+    for(i=0;i<c_lTabs;i++) {
+     szHTML+="<td height=1 nowrap class=\"clBorder\">&nbsp;</td>";
+     szHTML+=
+      "<td id=tdTab height=1 nowrap class=\"clTab\" onmouseover=\"parent.fnMouseOverTab("+i+");\" onmouseout=\"parent.fnMouseOutTab("+i+");\">"+
+      "<a href=\""+document.all.item("shLink")[i].href+"\" target=\"frSheet\" id=aTab>&nbsp;"+c_rgszSh[i]+"&nbsp;</a></td>";
+    }
+    szHTML+="<td id=tdTab height=1 nowrap class=\"clBorder\"><a id=aTab>&nbsp;</a></td><td width=100%></td>";
+   } else if (iRow==2) {
+    for (i=0;i<c_lTabs;i++)
+     szHTML+="<td height=1></td><td height=1 class=\"clBorder\"></td>";
+    szHTML+="<td height=1></td><td height=1></td>";
+   } else if (iRow==3) {
+    for (i=0;i<iCellCount;i++)
+     szHTML+="<td height=1></td>";
+   } else if (iRow==4) {
+    for (i=0;i<c_lTabs;i++)
+     szHTML+="<td height=1 width=1></td><td height=1></td>";
+    szHTML+="<td height=1 width=1></td><td></td>";
+   }
+  }
+  szHTML+="</tr>";
+ }
+
+ szHTML+="</table></body></html>";
+ with (frames['frTabs'].document) {
+  open("text/html","replace");
+  charset=document.charset;
+  write(szHTML);
+  close();
+ }
+}
+
+function fnInit()
+{
+ g_rglTabX[0]=0;
+ var i;
+ for (i=1;i<=c_lTabs;i++)
+  with (frames['frTabs'].document.all.tbTabs.rows[1].cells[fnTabToCol(i-1)])
+   g_rglTabX[i]=offsetLeft+offsetWidth-6;
+}
+
+function fnTabToCol(iTab)
+{
+ return 2*iTab+1;
+}
+
+function fnNextTab(fDir)
+{
+ var iNextTab=-1;
+ var i;
+
+ with (frames['frTabs'].document.body) {
+  if (fDir==0) {
+   if (scrollLeft>0) {
+    for (i=0;i<c_lTabs&&g_rglTabX[i]<scrollLeft;i++);
+    if (i<c_lTabs)
+     iNextTab=i-1;
+   }
+  } else {
+   if (g_rglTabX[c_lTabs]+6>offsetWidth+scrollLeft) {
+    for (i=0;i<c_lTabs&&g_rglTabX[i]<=scrollLeft;i++);
+    if (i<c_lTabs)
+     iNextTab=i;
+   }
+  }
+ }
+ return iNextTab;
+}
+
+function fnScrollTabs(fDir)
+{
+ var iNextTab=fnNextTab(fDir);
+
+ if (iNextTab>=0) {
+  frames['frTabs'].scroll(g_rglTabX[iNextTab],0);
+  return true;
+ } else
+  return false;
+}
+
+function fnFastScrollTabs(fDir)
+{
+ if (c_lTabs>16)
+  frames['frTabs'].scroll(g_rglTabX[fDir?c_lTabs-1:1],0);
+ else
+  if (fnScrollTabs(fDir)>0) window.setTimeout("fnFastScrollTabs("+fDir+");",5);
+}
+
+function fnSetTabProps(iTab,fActive)
+{
+ var iCol=fnTabToCol(iTab);
+ var i;
+
+ if (iTab>=0) {
+  with (frames['frTabs'].document.all) {
+   with (tbTabs) {
+    for (i=0;i<=4;i++) {
+     with (rows[i]) {
+      if (i==0)
+       cells[iCol].style.background=c_rgszClr[fActive?0:2];
+      else if (i>0 && i<4) {
+       if (fActive) {
+        cells[iCol-1].style.background=c_rgszClr[2];
+        cells[iCol].style.background=c_rgszClr[0];
+        cells[iCol+1].style.background=c_rgszClr[2];
+       } else {
+        if (i==1) {
+         cells[iCol-1].style.background=c_rgszClr[2];
+         cells[iCol].style.background=c_rgszClr[1];
+         cells[iCol+1].style.background=c_rgszClr[2];
+        } else {
+         cells[iCol-1].style.background=c_rgszClr[4];
+         cells[iCol].style.background=c_rgszClr[(i==2)?2:4];
+         cells[iCol+1].style.background=c_rgszClr[4];
+        }
+       }
+      } else
+       cells[iCol].style.background=c_rgszClr[fActive?2:4];
+     }
+    }
+   }
+   with (aTab[iTab].style) {
+    cursor=(fActive?"default":"hand");
+    color=c_rgszClr[3];
+   }
+  }
+ }
+}
+
+function fnMouseOverScroll(iCtl)
+{
+ frames['frScroll'].document.all.tdScroll[iCtl].style.color=c_rgszClr[7];
+}
+
+function fnMouseOutScroll(iCtl)
+{
+ frames['frScroll'].document.all.tdScroll[iCtl].style.color=c_rgszClr[6];
+}
+
+function fnMouseOverTab(iTab)
+{
+ if (iTab!=g_iShCur) {
+  var iCol=fnTabToCol(iTab);
+  with (frames['frTabs'].document.all) {
+   tdTab[iTab].style.background=c_rgszClr[5];
+  }
+ }
+}
+
+function fnMouseOutTab(iTab)
+{
+ if (iTab>=0) {
+  var elFrom=frames['frTabs'].event.srcElement;
+  var elTo=frames['frTabs'].event.toElement;
+
+  if ((!elTo) ||
+   (elFrom.tagName==elTo.tagName) ||
+   (elTo.tagName=="A" && elTo.parentElement!=elFrom) ||
+   (elFrom.tagName=="A" && elFrom.parentElement!=elTo)) {
+
+   if (iTab!=g_iShCur) {
+    with (frames['frTabs'].document.all) {
+     tdTab[iTab].style.background=c_rgszClr[1];
+    }
+   }
+  }
+ }
+}
+
+function fnSetActiveSheet(iSh)
+{
+ if (iSh!=g_iShCur) {
+  fnSetTabProps(g_iShCur,false);
+  fnSetTabProps(iSh,true);
+  g_iShCur=iSh;
+ }
+}
+
+ window.g_iIEVer=fnGetIEVer();
+ if (window.g_iIEVer>=4)
+  fnBuildFrameset();
+//-->
+</script>
+<![endif]><!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Year End Points</x:Name>
+    <x:WorksheetSource HRef="./index_files/sheet001.htm"/>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Class Points</x:Name>
+    <x:WorksheetSource HRef="./index_files/sheet002.htm"/>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Street &amp; Ladies Points</x:Name>
+    <x:WorksheetSource HRef="./index_files/sheet003.htm"/>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:Stylesheet HRef="./index_files/stylesheet.css"/>
+  <x:WindowHeight>8385</x:WindowHeight>
+  <x:WindowWidth>15135</x:WindowWidth>
+  <x:WindowTopX>120</x:WindowTopX>
+  <x:WindowTopY>135</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+ <x:SupBook>
+  <x:Path>C:\DOCUME~1\Admin\LOCALS~1\Temp\2008 Year End Final.xls</x:Path>
+  <x:SheetName>E1 Results</x:SheetName>
+  <x:SheetName>E1 Street</x:SheetName>
+  <x:SheetName>E1 Ladies</x:SheetName>
+  <x:SheetName>E2 Results</x:SheetName>
+  <x:SheetName>E2 Street</x:SheetName>
+  <x:SheetName>E2 Ladies</x:SheetName>
+  <x:SheetName>E3 Results</x:SheetName>
+  <x:SheetName>E3 Street</x:SheetName>
+  <x:SheetName>E3 Ladies</x:SheetName>
+  <x:SheetName>E4 Results</x:SheetName>
+  <x:SheetName>E4 Street</x:SheetName>
+  <x:SheetName>E4 Ladies</x:SheetName>
+  <x:SheetName>E5 Results</x:SheetName>
+  <x:SheetName>E6 Results</x:SheetName>
+  <x:SheetName>E6 Street</x:SheetName>
+  <x:SheetName>E6 Ladies</x:SheetName>
+  <x:SheetName>IA Challenge</x:SheetName>
+  <x:SheetName>E7 Results</x:SheetName>
+  <x:SheetName>E7 Street</x:SheetName>
+  <x:SheetName>E7 Ladies</x:SheetName>
+  <x:SheetName>E8 Results</x:SheetName>
+  <x:SheetName>E8 Street</x:SheetName>
+  <x:SheetName>E8 Ladies</x:SheetName>
+  <x:SheetName>E9 Results</x:SheetName>
+  <x:SheetName>E9 Street</x:SheetName>
+  <x:SheetName>E9 Ladies</x:SheetName>
+  <x:SheetName>E10 Results</x:SheetName>
+  <x:SheetName>E10 Street</x:SheetName>
+  <x:SheetName>E10 Ladies</x:SheetName>
+  <x:SheetName>E11 Results</x:SheetName>
+  <x:SheetName>E11 Street</x:SheetName>
+  <x:SheetName>E11 Ladies</x:SheetName>
+  <x:SheetName>Entrants</x:SheetName>
+  <x:SheetName>Worksheet</x:SheetName>
+  <x:SheetName>Street</x:SheetName>
+  <x:SheetName>SY Points</x:SheetName>
+  <x:SheetName>YE Class</x:SheetName>
+  <x:SheetName>YE Street</x:SheetName>
+  <x:SheetName>YE Ladies</x:SheetName>
+  <x:SheetName>Members</x:SheetName>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>0</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>1</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>2</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>3</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>4</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>5</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>6</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>7</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>8</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>9</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>10</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>11</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>12</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>13</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>14</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>15</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>16</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>17</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>18</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>19</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>20</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>21</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>22</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>23</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>24</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>25</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>26</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>27</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>28</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>29</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>30</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>31</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>32</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>422</x:Count>
+   <x:SheetIndex>33</x:SheetIndex>
+   <x:Crn>
+    <x:Row>2</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Chad Bremer</x:Text>
+    <x:Text>Chad Bremer STX</x:Text>
+    <x:Text>Chad</x:Text>
+    <x:Text>Bremer</x:Text>
+    <x:Text>04 Cavalier</x:Text>
+    <x:Text>STX</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>969.88277760847404</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>2</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Chad Bremer</x:Text>
+    <x:Text>Chad Bremer STX</x:Text>
+    <x:Text>Chad</x:Text>
+    <x:Text>Bremer</x:Text>
+    <x:Text>04 Cavalier</x:Text>
+    <x:Text>STX</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>924.0124771423009</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>2</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Matt Newberg</x:Text>
+    <x:Text>Matt Newberg STU</x:Text>
+    <x:Text>Matt</x:Text>
+    <x:Text>Newberg</x:Text>
+    <x:Text>04 RX8</x:Text>
+    <x:Text>STU</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>944.20157298877871</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>2</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>John Flesher</x:Text>
+    <x:Text>John Flesher STX</x:Text>
+    <x:Text>John</x:Text>
+    <x:Text>Flesher</x:Text>
+    <x:Text>95 Mustang CT</x:Text>
+    <x:Text>STX</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>936.94544860502083</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>2</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Matt Newberg</x:Text>
+    <x:Text>Matt Newberg STU</x:Text>
+    <x:Text>Matt</x:Text>
+    <x:Text>Newberg</x:Text>
+    <x:Text>04 RX8</x:Text>
+    <x:Text>STU</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>903.60062739871557</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>2</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Chad Bremer</x:Text>
+    <x:Text>Chad Bremer STX</x:Text>
+    <x:Text>Chad</x:Text>
+    <x:Text>Bremer</x:Text>
+    <x:Text>04 Cavalier</x:Text>
+    <x:Text>STX</x:Text>
+    <x:Number>0</x:Number>
+    <x:Number>0</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>2</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>69</x:ColLast>
+    <x:Text>Aaron Breitbach</x:Text>
+    <x:Text>Aaron Breitbach STX</x:Text>
+    <x:Text>Aaron</x:Text>
+    <x:Text>Breitbach</x:Text>
+    <x:Text>03 Impreza WRX</x:Text>
+    <x:Text>STX</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>2</x:Row>
+    <x:ColFirst>71</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>2</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>78</x:ColLast>
+    <x:Text>Jim Kramer</x:Text>
+    <x:Text>Jim Kramer STX</x:Text>
+    <x:Text>Jim</x:Text>
+    <x:Text>Kramer</x:Text>
+    <x:Text>06 Chevy Cobalt</x:Text>
+    <x:Text>STX</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>2</x:Row>
+    <x:ColFirst>80</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>2</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text>Jeremy Holzer</x:Text>
+    <x:Text>Jeremy Holzer STX</x:Text>
+    <x:Text>Jeremy</x:Text>
+    <x:Text>Holzer</x:Text>
+    <x:Text>00 Mustang </x:Text>
+    <x:Text>STX</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>920.33058614581989</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>2</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text>John Flesher</x:Text>
+    <x:Text>John Flesher STX</x:Text>
+    <x:Text>John</x:Text>
+    <x:Text>Flesher</x:Text>
+    <x:Text>95 Ford Mustang</x:Text>
+    <x:Text>STX</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>906.42111409404492</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>3</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Jeremy Holzer</x:Text>
+    <x:Text>Jeremy Holzer STX</x:Text>
+    <x:Text>Jeremy</x:Text>
+    <x:Text>Holzer</x:Text>
+    <x:Text>00 Mustang</x:Text>
+    <x:Text>STX</x:Text>
+    <x:Number>986.58902042464558</x:Number>
+    <x:Number>956.87569948747876</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>3</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>John Flesher</x:Text>
+    <x:Text>John Flesher STX</x:Text>
+    <x:Text>John</x:Text>
+    <x:Text>Flesher</x:Text>
+    <x:Text>95 Mustang CT</x:Text>
+    <x:Text>STX</x:Text>
+    <x:Number>988.64977014767521</x:Number>
+    <x:Number>913.52472314031979</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>3</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Dave Belville</x:Text>
+    <x:Text>Dave Belville STU</x:Text>
+    <x:Text>Dave</x:Text>
+    <x:Text>Belville</x:Text>
+    <x:Text>03 Mustang</x:Text>
+    <x:Text>STU</x:Text>
+    <x:Number>911.68860516355005</x:Number>
+    <x:Number>860.81781507136952</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>3</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Jeremy Holzer</x:Text>
+    <x:Text>Jeremy Holzer STX</x:Text>
+    <x:Text>Jeremy</x:Text>
+    <x:Text>Holzer</x:Text>
+    <x:Text>00 Mustang </x:Text>
+    <x:Text>STX</x:Text>
+    <x:Number>968.57578421445021</x:Number>
+    <x:Number>907.50267264876788</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>3</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Dave Belville</x:Text>
+    <x:Text>Dave Belville STU</x:Text>
+    <x:Text>Dave</x:Text>
+    <x:Text>Belville</x:Text>
+    <x:Text>03 Mustang</x:Text>
+    <x:Text>STU</x:Text>
+    <x:Number>990.12657501219837</x:Number>
+    <x:Number>894.67899438516383</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>3</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>John Flesher</x:Text>
+    <x:Text>John Flesher STX</x:Text>
+    <x:Text>John</x:Text>
+    <x:Text>Flesher</x:Text>
+    <x:Text>95 Ford Mustang</x:Text>
+    <x:Text>STX</x:Text>
+    <x:Number>975.24572260647972</x:Number>
+    <x:Number>897.4943841174852</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>3</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>69</x:ColLast>
+    <x:Text>Jim Kramer</x:Text>
+    <x:Text>Jim Kramer STX</x:Text>
+    <x:Text>Jim</x:Text>
+    <x:Text>Kramer</x:Text>
+    <x:Text>06 Chevy Cobalt</x:Text>
+    <x:Text>STX</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>3</x:Row>
+    <x:ColFirst>71</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>3</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Jeremy Holzer</x:Text>
+    <x:Text>Jeremy Holzer STX</x:Text>
+    <x:Text>Jeremy</x:Text>
+    <x:Text>Holzer</x:Text>
+    <x:Text>00 Mustang </x:Text>
+    <x:Text>STX</x:Text>
+    <x:Number>996.02489870521629</x:Number>
+    <x:Number>912.06189635806413</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>3</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text>Rosemarie Schneider</x:Text>
+    <x:Text>Rosemarie Schneider STX</x:Text>
+    <x:Text>Rosemarie</x:Text>
+    <x:Text>Schneider</x:Text>
+    <x:Text>02 Mustang</x:Text>
+    <x:Text>STX</x:Text>
+    <x:Number>990.65787215261264</x:Number>
+    <x:Number>911.73274014818469</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>3</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text>Jeremy Holzer</x:Text>
+    <x:Text>Jeremy Holzer STX</x:Text>
+    <x:Text>Jeremy</x:Text>
+    <x:Text>Holzer</x:Text>
+    <x:Text>00 Mustang </x:Text>
+    <x:Text>STX</x:Text>
+    <x:Number>990.68520459896558</x:Number>
+    <x:Number>897.97798686908118</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>4</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Rosemarie Schneider</x:Text>
+    <x:Text>Rosemarie Schneider STX</x:Text>
+    <x:Text>Rosemarie</x:Text>
+    <x:Text>Schneider</x:Text>
+    <x:Text>00 Mustang</x:Text>
+    <x:Text>STX</x:Text>
+    <x:Number>953.39809813304862</x:Number>
+    <x:Number>924.68439558391765</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>4</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Joe Tauke</x:Text>
+    <x:Text>Joe Tauke STU</x:Text>
+    <x:Text>Joe</x:Text>
+    <x:Text>Tauke</x:Text>
+    <x:Text>04 SRT4</x:Text>
+    <x:Text>STU</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>948.75785054428911</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>4</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Alex Lyles</x:Text>
+    <x:Text>Alex Lyles STS</x:Text>
+    <x:Text>Alex</x:Text>
+    <x:Text>Lyles</x:Text>
+    <x:Text>03 SVT Focus</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>915.47218687827171</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>4</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Rosemarie Schneider</x:Text>
+    <x:Text>Rosemarie Schneider STX</x:Text>
+    <x:Text>Rosemarie</x:Text>
+    <x:Text>Schneider</x:Text>
+    <x:Text>00 Mustang </x:Text>
+    <x:Text>STX</x:Text>
+    <x:Number>944.24134601824619</x:Number>
+    <x:Number>884.70263153647431</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>4</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Don Clayton</x:Text>
+    <x:Text>Don Clayton STS</x:Text>
+    <x:Text>Don</x:Text>
+    <x:Text>Clayton</x:Text>
+    <x:Text>93 BMW</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>924.62500879153686</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>4</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Ray Flesher</x:Text>
+    <x:Text>Ray Flesher STX</x:Text>
+    <x:Text>Ray</x:Text>
+    <x:Text>Flesher</x:Text>
+    <x:Text>95 Ford Mustang</x:Text>
+    <x:Text>STX</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>4</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Jeremy Holzer</x:Text>
+    <x:Text>Jeremy Holzer STX</x:Text>
+    <x:Text>Jeremy</x:Text>
+    <x:Text>Holzer</x:Text>
+    <x:Text>00 Mustang </x:Text>
+    <x:Text>STX</x:Text>
+    <x:Number>904.46267308850076</x:Number>
+    <x:Number>904.46267308850076</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>4</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>John Flesher</x:Text>
+    <x:Text>John Flesher STX</x:Text>
+    <x:Text>John</x:Text>
+    <x:Text>Flesher</x:Text>
+    <x:Text>95 Ford Mustang</x:Text>
+    <x:Text>STX</x:Text>
+    <x:Number>986.79228558041768</x:Number>
+    <x:Number>903.60757493910091</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>4</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text>Matt Newberg</x:Text>
+    <x:Text>Matt Newberg STU</x:Text>
+    <x:Text>Matt</x:Text>
+    <x:Text>Newberg</x:Text>
+    <x:Text>04 RX8</x:Text>
+    <x:Text>STU</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>923.08789888673221</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>4</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text>Rosemarie Schneider</x:Text>
+    <x:Text>Rosemarie Schneider STX</x:Text>
+    <x:Text>Rosemarie</x:Text>
+    <x:Text>Schneider</x:Text>
+    <x:Text>02 Mustang</x:Text>
+    <x:Text>STX</x:Text>
+    <x:Number>963.04525786457737</x:Number>
+    <x:Number>872.92455555659694</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>5</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Erik Shreiner</x:Text>
+    <x:Text>Erik Shreiner STS</x:Text>
+    <x:Text>Erik</x:Text>
+    <x:Text>Shreiner</x:Text>
+    <x:Text>03 SVT Focus</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>951.05535750277909</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>5</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Matt Newberg</x:Text>
+    <x:Text>Matt Newberg STU</x:Text>
+    <x:Text>Matt</x:Text>
+    <x:Text>Newberg</x:Text>
+    <x:Text>04 RX8</x:Text>
+    <x:Text>STU</x:Text>
+    <x:Number>951.7665255617062</x:Number>
+    <x:Number>902.9959630119306</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>5</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Erik Shreiner</x:Text>
+    <x:Text>Erik Shreiner STS</x:Text>
+    <x:Text>Erik</x:Text>
+    <x:Text>Shreiner</x:Text>
+    <x:Text>03 SVT Focus</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Number>996.97312321861807</x:Number>
+    <x:Number>912.70116537180888</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>5</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Erik Shreiner</x:Text>
+    <x:Text>Erik Shreiner STS</x:Text>
+    <x:Text>Erik</x:Text>
+    <x:Text>Shreiner</x:Text>
+    <x:Text>03 SVT Focus</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>929.77763492627025</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>5</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Josh Graham</x:Text>
+    <x:Text>Josh Graham STS</x:Text>
+    <x:Text>Josh</x:Text>
+    <x:Text>Graham</x:Text>
+    <x:Text>90 240SX</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Number>965.37259649221585</x:Number>
+    <x:Number>892.60764551872387</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>5</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Matt Newberg</x:Text>
+    <x:Text>Matt Newberg STU</x:Text>
+    <x:Text>Matt</x:Text>
+    <x:Text>Newberg</x:Text>
+    <x:Text>04 RX8</x:Text>
+    <x:Text>STU</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>876.5824523404284</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>5</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Rosemarie Schneider</x:Text>
+    <x:Text>Rosemarie Schneider STX</x:Text>
+    <x:Text>Rosemarie</x:Text>
+    <x:Text>Schneider</x:Text>
+    <x:Text>02 Mustang</x:Text>
+    <x:Text>STX</x:Text>
+    <x:Number>896.78586751730199</x:Number>
+    <x:Number>896.78586751730199</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>5</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Rosemarie Schneider</x:Text>
+    <x:Text>Rosemarie Schneider STX</x:Text>
+    <x:Text>Rosemarie</x:Text>
+    <x:Text>Schneider</x:Text>
+    <x:Text>02 Mustang</x:Text>
+    <x:Text>STX</x:Text>
+    <x:Number>960.55518576042198</x:Number>
+    <x:Number>879.58221267369095</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>5</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text>Dave Belville</x:Text>
+    <x:Text>Dave Belville STU</x:Text>
+    <x:Text>Dave</x:Text>
+    <x:Text>Belville</x:Text>
+    <x:Text>03 Mustang</x:Text>
+    <x:Text>STU</x:Text>
+    <x:Number>952.01186546098279</x:Number>
+    <x:Number>878.79063260361693</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>5</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text>Ed York</x:Text>
+    <x:Text>Ed York SM2</x:Text>
+    <x:Text>Ed</x:Text>
+    <x:Text>York</x:Text>
+    <x:Text>88 Fiero</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>912.42779674992744</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>6</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Don Clayton</x:Text>
+    <x:Text>Don Clayton STS</x:Text>
+    <x:Text>Don</x:Text>
+    <x:Text>Clayton</x:Text>
+    <x:Text>93 318is</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Number>983.82727028312627</x:Number>
+    <x:Number>935.67419626010201</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>6</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Dave Belville</x:Text>
+    <x:Text>Dave Belville STU</x:Text>
+    <x:Text>Dave</x:Text>
+    <x:Text>Belville</x:Text>
+    <x:Text>03 Mustang</x:Text>
+    <x:Text>STU</x:Text>
+    <x:Number>918.70972811566855</x:Number>
+    <x:Number>871.63306692114998</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>6</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Robert Bishop</x:Text>
+    <x:Text>Robert Bishop STS</x:Text>
+    <x:Text>Robert</x:Text>
+    <x:Text>Bishop</x:Text>
+    <x:Text>02 Solara</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>6</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Don Clayton</x:Text>
+    <x:Text>Don Clayton STS</x:Text>
+    <x:Text>Don</x:Text>
+    <x:Text>Clayton</x:Text>
+    <x:Text>93 BMW</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Number>951.21135272217134</x:Number>
+    <x:Number>884.41504184903886</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>6</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Chris Beckwith</x:Text>
+    <x:Text>Chris Beckwith SM2</x:Text>
+    <x:Text>Chris</x:Text>
+    <x:Text>Beckwith</x:Text>
+    <x:Text>06 Elise</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>6</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Dave Belville</x:Text>
+    <x:Text>Dave Belville STU</x:Text>
+    <x:Text>Dave</x:Text>
+    <x:Text>Belville</x:Text>
+    <x:Text>03 Mustang</x:Text>
+    <x:Text>STU</x:Text>
+    <x:Number>982.91647592492416</x:Number>
+    <x:Number>861.60733491208168</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>6</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Matt Newberg</x:Text>
+    <x:Text>Matt Newberg STU</x:Text>
+    <x:Text>Matt</x:Text>
+    <x:Text>Newberg</x:Text>
+    <x:Text>04 RX8</x:Text>
+    <x:Text>STU</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>891.06761938280499</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>6</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Matt Newberg</x:Text>
+    <x:Text>Matt Newberg STU</x:Text>
+    <x:Text>Matt</x:Text>
+    <x:Text>Newberg</x:Text>
+    <x:Text>04 RX8</x:Text>
+    <x:Text>STU</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>911.48861377786864</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>6</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text>Erik Shreiner</x:Text>
+    <x:Text>Erik Shreiner STS</x:Text>
+    <x:Text>Erik</x:Text>
+    <x:Text>Shreiner</x:Text>
+    <x:Text>03 SVT Focus</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>908.25150490434396</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>6</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text>Alex Haugen</x:Text>
+    <x:Text>Alex Haugen SM2</x:Text>
+    <x:Text>Alex</x:Text>
+    <x:Text>Haugen</x:Text>
+    <x:Text>07 WRX</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>958.80452342487877</x:Number>
+    <x:Number>874.83989882242633</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>7</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Alex Lyles</x:Text>
+    <x:Text>Alex Lyles STS</x:Text>
+    <x:Text>Alex</x:Text>
+    <x:Text>Lyles</x:Text>
+    <x:Text>03 Focus SVT</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Number>970.30207844657014</x:Number>
+    <x:Number>922.81099010269247</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>7</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Erik Shreiner</x:Text>
+    <x:Text>Erik Shreiner STS</x:Text>
+    <x:Text>Erik</x:Text>
+    <x:Text>Shreiner</x:Text>
+    <x:Text>03 SVT Focus</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>929.07717681934446</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>7</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Josh Graham</x:Text>
+    <x:Text>Josh Graham STS</x:Text>
+    <x:Text>Josh</x:Text>
+    <x:Text>Graham</x:Text>
+    <x:Text>90 240SX</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Number>977.24543985222806</x:Number>
+    <x:Number>894.64101993833765</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>7</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Alex Lyles</x:Text>
+    <x:Text>Alex Lyles STS</x:Text>
+    <x:Text>Alex</x:Text>
+    <x:Text>Lyles</x:Text>
+    <x:Text>03 SVT Focus</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Number>950.25765971668238</x:Number>
+    <x:Number>883.52831942194939</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>7</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Alex Haugen</x:Text>
+    <x:Text>Alex Haugen SM2</x:Text>
+    <x:Text>Alex</x:Text>
+    <x:Text>Haugen</x:Text>
+    <x:Text>07 WRX</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>959.22230374174592</x:Number>
+    <x:Number>882.87989899162233</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>7</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Chris Beckwith</x:Text>
+    <x:Text>Chris Beckwith SM2</x:Text>
+    <x:Text>Chris</x:Text>
+    <x:Text>Beckwith</x:Text>
+    <x:Text>06 Elise</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>7</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Dave Belville</x:Text>
+    <x:Text>Dave Belville STU</x:Text>
+    <x:Text>Dave</x:Text>
+    <x:Text>Belville</x:Text>
+    <x:Text>03 Mustang</x:Text>
+    <x:Text>STU</x:Text>
+    <x:Number>966.73619298086521</x:Number>
+    <x:Number>861.42731805065557</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>7</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Dave Belville</x:Text>
+    <x:Text>Dave Belville STU</x:Text>
+    <x:Text>Dave</x:Text>
+    <x:Text>Belville</x:Text>
+    <x:Text>03 Mustang</x:Text>
+    <x:Text>STU</x:Text>
+    <x:Number>973.86015940769846</x:Number>
+    <x:Number>887.66244671201719</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>7</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text>Don Clayton</x:Text>
+    <x:Text>Don Clayton STS</x:Text>
+    <x:Text>Don</x:Text>
+    <x:Text>Clayton</x:Text>
+    <x:Text>93 BMW</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Number>0</x:Number>
+    <x:Number>0</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>7</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text>Katie Haugen</x:Text>
+    <x:Text>Katie Haugen SM2</x:Text>
+    <x:Text>Katie</x:Text>
+    <x:Text>Haugen</x:Text>
+    <x:Text>07 WRX</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>911.59824365160182</x:Number>
+    <x:Number>831.76757697613459</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>8</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Josh Graham</x:Text>
+    <x:Text>Josh Graham STS</x:Text>
+    <x:Text>Josh</x:Text>
+    <x:Text>Graham</x:Text>
+    <x:Text>90 240SX</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Number>893.570261284445</x:Number>
+    <x:Number>849.83478429972956</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>8</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Don Clayton</x:Text>
+    <x:Text>Don Clayton STS</x:Text>
+    <x:Text>Don</x:Text>
+    <x:Text>Clayton</x:Text>
+    <x:Text>93 BMW</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Number>960.26568615822578</x:Number>
+    <x:Number>892.1609326923749</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>8</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Don Clayton</x:Text>
+    <x:Text>Don Clayton STS</x:Text>
+    <x:Text>Don</x:Text>
+    <x:Text>Clayton</x:Text>
+    <x:Text>93 BMW</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Number>952.06442397453645</x:Number>
+    <x:Number>871.58850026497089</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>8</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Jeff Ziegenhorn</x:Text>
+    <x:Text>Jeff Ziegenhorn STS</x:Text>
+    <x:Text>Jeff</x:Text>
+    <x:Text>Ziegenhorn</x:Text>
+    <x:Text>90 240sx</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Number>947.99901052925941</x:Number>
+    <x:Number>881.42827792233925</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>8</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Ryan Tone</x:Text>
+    <x:Text>Ryan Tone HS</x:Text>
+    <x:Text>Ryan</x:Text>
+    <x:Text>Tone</x:Text>
+    <x:Text>05 Clown Car</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>959.96454947512098</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>8</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Alex Haugen</x:Text>
+    <x:Text>Alex Haugen SM2</x:Text>
+    <x:Text>Alex</x:Text>
+    <x:Text>Haugen</x:Text>
+    <x:Text>07 WRX</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>911.93313402669583</x:Number>
+    <x:Number>841.35522964492031</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>8</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>69</x:ColLast>
+    <x:Text>David Price</x:Text>
+    <x:Text>David Price SS</x:Text>
+    <x:Text>David</x:Text>
+    <x:Text>Price</x:Text>
+    <x:Text>05 Boxster S</x:Text>
+    <x:Text>SS</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>8</x:Row>
+    <x:ColFirst>71</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>8</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>David Dahlin</x:Text>
+    <x:Text>David Dahlin STU</x:Text>
+    <x:Text>David</x:Text>
+    <x:Text>Dahlin</x:Text>
+    <x:Text>97 M3</x:Text>
+    <x:Text>STU</x:Text>
+    <x:Number>915.39927329538057</x:Number>
+    <x:Number>834.37601466927481</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>8</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text>Ed York</x:Text>
+    <x:Text>Ed York SM2</x:Text>
+    <x:Text>Ed</x:Text>
+    <x:Text>York</x:Text>
+    <x:Text>88 Fiero</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>919.77754757529215</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>8</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text>Gary Patch</x:Text>
+    <x:Text>Gary Patch HS</x:Text>
+    <x:Text>Gary</x:Text>
+    <x:Text>Patch</x:Text>
+    <x:Text>02 FFFocus</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>935.33473065311989</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>9</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Dirk Jaegle</x:Text>
+    <x:Text>Dirk Jaegle SM2</x:Text>
+    <x:Text>Dirk</x:Text>
+    <x:Text>Jaegle</x:Text>
+    <x:Text>04 WRX</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Text></x:Text>
+    <x:Text></x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>9</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Robert Bishop</x:Text>
+    <x:Text>Robert Bishop STS</x:Text>
+    <x:Text>Robert</x:Text>
+    <x:Text>Bishop</x:Text>
+    <x:Text>02 Solara</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>9</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Chris Beckwith</x:Text>
+    <x:Text>Chris Beckwith SM2</x:Text>
+    <x:Text>Chris</x:Text>
+    <x:Text>Beckwith</x:Text>
+    <x:Text>06 Elise</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>9</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Josh Graham</x:Text>
+    <x:Text>Josh Graham STS</x:Text>
+    <x:Text>Josh</x:Text>
+    <x:Text>Graham</x:Text>
+    <x:Text>90 240SX</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Number>934.27314643065358</x:Number>
+    <x:Number>868.66627646341806</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>9</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Gary Patch</x:Text>
+    <x:Text>Gary Patch HS</x:Text>
+    <x:Text>Gary</x:Text>
+    <x:Text>Patch</x:Text>
+    <x:Text>02 Ford FFF</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>997.90328729362773</x:Number>
+    <x:Number>957.95177960656963</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>9</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Katie Haugen</x:Text>
+    <x:Text>Katie Haugen SM2</x:Text>
+    <x:Text>Katie</x:Text>
+    <x:Text>Haugen</x:Text>
+    <x:Text>07 WRX</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>841.55818923644836</x:Number>
+    <x:Number>776.42686414755042</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>9</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Ken Anderson</x:Text>
+    <x:Text>Ken Anderson SS</x:Text>
+    <x:Text>Ken</x:Text>
+    <x:Text>Anderson</x:Text>
+    <x:Text>07 Corvette</x:Text>
+    <x:Text>SS</x:Text>
+    <x:Number>874.24301448454162</x:Number>
+    <x:Number>819.28681793158887</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>9</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Erik Shreiner</x:Text>
+    <x:Text>Erik Shreiner STS</x:Text>
+    <x:Text>Erik</x:Text>
+    <x:Text>Shreiner</x:Text>
+    <x:Text>03 SVT Focus</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>921.81125525838002</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>9</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text>Alex Haugen</x:Text>
+    <x:Text>Alex Haugen SM2</x:Text>
+    <x:Text>Alex</x:Text>
+    <x:Text>Haugen</x:Text>
+    <x:Text>07 WRX</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>968.71151767987737</x:Number>
+    <x:Number>890.99910403953697</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>9</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text>Ryan Tone</x:Text>
+    <x:Text>Ryan Tone HS</x:Text>
+    <x:Text>Ryan</x:Text>
+    <x:Text>Tone</x:Text>
+    <x:Text>05 Clown Car</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>999.13626312880046</x:Number>
+    <x:Number>934.52684755934138</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>10</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Blade McQuiggin</x:Text>
+    <x:Text>Blade McQuiggin SM2</x:Text>
+    <x:Text>Blade</x:Text>
+    <x:Text>McQuiggin</x:Text>
+    <x:Text>87 RX-7</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>980.290711998029</x:Number>
+    <x:Number>881.33189524284251</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>10</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Josh Graham</x:Text>
+    <x:Text>Josh Graham STS</x:Text>
+    <x:Text>Josh</x:Text>
+    <x:Text>Graham</x:Text>
+    <x:Text>90 240SX</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Number>913.27154110812387</x:Number>
+    <x:Number>848.49974508218759</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>10</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Alex Haugen</x:Text>
+    <x:Text>Alex Haugen SM2</x:Text>
+    <x:Text>Alex</x:Text>
+    <x:Text>Haugen</x:Text>
+    <x:Text>07 WRX</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>961.85351847607114</x:Number>
+    <x:Number>887.05656601987539</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>10</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>David Price</x:Text>
+    <x:Text>David Price SS</x:Text>
+    <x:Text>David</x:Text>
+    <x:Text>Price</x:Text>
+    <x:Text>05 Porsche Boxster S</x:Text>
+    <x:Text>SS</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>10</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Adam Moore</x:Text>
+    <x:Text>Adam Moore HS</x:Text>
+    <x:Text>Adam</x:Text>
+    <x:Text>Moore</x:Text>
+    <x:Text>00 S10 Xtreme FT</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>971.32785294285554</x:Number>
+    <x:Number>932.44030474292492</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>10</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Gary Patch</x:Text>
+    <x:Text>Gary Patch HS</x:Text>
+    <x:Text>Gary</x:Text>
+    <x:Text>Patch</x:Text>
+    <x:Text>02 FFFocus</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>929.12450342756085</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>10</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Ed York</x:Text>
+    <x:Text>Ed York SM2</x:Text>
+    <x:Text>Ed</x:Text>
+    <x:Text>York</x:Text>
+    <x:Text>88 Fiero</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>906.17586588644622</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>10</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Alex Lyles</x:Text>
+    <x:Text>Alex Lyles STS</x:Text>
+    <x:Text>Alex</x:Text>
+    <x:Text>Lyles</x:Text>
+    <x:Text>03 SVT Focus</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Number>960.83250988142299</x:Number>
+    <x:Number>885.70622202685433</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>10</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text>Blade McQuiggin</x:Text>
+    <x:Text>Blade McQuiggin SM2</x:Text>
+    <x:Text>Blade</x:Text>
+    <x:Text>McQuiggin</x:Text>
+    <x:Text>87 RX7</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>959.64348843578057</x:Number>
+    <x:Number>882.65853434006044</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>10</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text>Adam Moore</x:Text>
+    <x:Text>Adam Moore HS</x:Text>
+    <x:Text>Adam</x:Text>
+    <x:Text>Moore</x:Text>
+    <x:Text>00 S10 Xtreme FT</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>972.60665579228817</x:Number>
+    <x:Number>909.71278442691153</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>11</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Alex Haugen</x:Text>
+    <x:Text>Alex Haugen SM2</x:Text>
+    <x:Text>Alex</x:Text>
+    <x:Text>Haugen</x:Text>
+    <x:Text>2007 WRX TR </x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>971.65299851447878</x:Number>
+    <x:Number>873.56614544857393</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>11</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Matt Shepherd</x:Text>
+    <x:Text>Matt Shepherd SM2</x:Text>
+    <x:Text>Matt</x:Text>
+    <x:Text>Shepherd</x:Text>
+    <x:Text>86 CRX si</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>909.70922327794733</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>11</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Blade McQuiggin</x:Text>
+    <x:Text>Blade McQuiggin SM2</x:Text>
+    <x:Text>Blade</x:Text>
+    <x:Text>McQuiggin</x:Text>
+    <x:Text>87 RX7</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>954.03853057317235</x:Number>
+    <x:Number>879.84929776179831</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>11</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Ken Anderson</x:Text>
+    <x:Text>Ken Anderson SS</x:Text>
+    <x:Text>Ken</x:Text>
+    <x:Text>Anderson</x:Text>
+    <x:Text>07 Corvette</x:Text>
+    <x:Text>SS</x:Text>
+    <x:Number>872.40359298306464</x:Number>
+    <x:Number>850.47795849655597</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>11</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Marcia Patch</x:Text>
+    <x:Text>Marcia Patch HS</x:Text>
+    <x:Text>Marcia</x:Text>
+    <x:Text>Patch</x:Text>
+    <x:Text>02 Focus</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>896.64576306914</x:Number>
+    <x:Number>860.74814598344312</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>11</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Ryan Tone</x:Text>
+    <x:Text>Ryan Tone HS</x:Text>
+    <x:Text>Ryan</x:Text>
+    <x:Text>Tone</x:Text>
+    <x:Text>05 Clown Car</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>986.08618541899807</x:Number>
+    <x:Number>916.19683736420416</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>11</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Blade McQuiggin</x:Text>
+    <x:Text>Blade McQuiggin SM2</x:Text>
+    <x:Text>Blade</x:Text>
+    <x:Text>McQuiggin</x:Text>
+    <x:Text>87 RX7</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>976.77023191148362</x:Number>
+    <x:Number>885.1256106744936</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>11</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Don Clayton</x:Text>
+    <x:Text>Don Clayton STS</x:Text>
+    <x:Text>Don</x:Text>
+    <x:Text>Clayton</x:Text>
+    <x:Text>93 BMW</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Number>0</x:Number>
+    <x:Number>0</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>11</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text>Gary Patch</x:Text>
+    <x:Text>Gary Patch HS</x:Text>
+    <x:Text>Gary</x:Text>
+    <x:Text>Patch</x:Text>
+    <x:Text>02 FFFocus</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>956.46593261810654</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>11</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text>Marcia Patch</x:Text>
+    <x:Text>Marcia Patch HS</x:Text>
+    <x:Text>Marcia</x:Text>
+    <x:Text>Patch</x:Text>
+    <x:Text>02 Focus</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>930.35001930253497</x:Number>
+    <x:Number>870.18868471746146</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>12</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Brian Livingston</x:Text>
+    <x:Text>Brian Livingston SM2</x:Text>
+    <x:Text>Brian</x:Text>
+    <x:Text>Livingston</x:Text>
+    <x:Text>04 RX8</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Text></x:Text>
+    <x:Text></x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>12</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Dirk Jaegle</x:Text>
+    <x:Text>Dirk Jaegle SM2</x:Text>
+    <x:Text>Dirk</x:Text>
+    <x:Text>Jaegle</x:Text>
+    <x:Text>04 WRX</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>12</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Ed York</x:Text>
+    <x:Text>Ed York SM2</x:Text>
+    <x:Text>Ed</x:Text>
+    <x:Text>York</x:Text>
+    <x:Text>88 Fiero</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>910.82424173187883</x:Number>
+    <x:Number>839.99549681788426</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>12</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Mike Phelps</x:Text>
+    <x:Text>Mike Phelps SM2</x:Text>
+    <x:Text>Mike</x:Text>
+    <x:Text>Phelps</x:Text>
+    <x:Text>97 Viper</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>936.17264172417185</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>12</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Scott Shumard</x:Text>
+    <x:Text>Scott Shumard FS</x:Text>
+    <x:Text>Scott</x:Text>
+    <x:Text>Shumard</x:Text>
+    <x:Text>01 Firebird</x:Text>
+    <x:Text>FS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>981.58265859459516</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>12</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Adam Moore</x:Text>
+    <x:Text>Adam Moore HS</x:Text>
+    <x:Text>Adam</x:Text>
+    <x:Text>Moore</x:Text>
+    <x:Text>00 S10 Xtreme FT</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>977.68473937617762</x:Number>
+    <x:Number>908.39084798159524</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>12</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Alex Haugen</x:Text>
+    <x:Text>Alex Haugen SM2</x:Text>
+    <x:Text>Alex</x:Text>
+    <x:Text>Haugen</x:Text>
+    <x:Text>07 WRX</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>960.55904749245178</x:Number>
+    <x:Number>870.43542659653247</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>12</x:Row>
+    <x:ColFirst>74</x:ColFirst>
+    <x:ColLast>78</x:ColLast>
+    <x:Text> STS</x:Text>
+    <x:Text>Josh</x:Text>
+    <x:Text>Graham</x:Text>
+    <x:Text>90 240SX</x:Text>
+    <x:Text>STS</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>12</x:Row>
+    <x:ColFirst>80</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>12</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text>Ryan Tone</x:Text>
+    <x:Text>Ryan Tone HS</x:Text>
+    <x:Text>Ryan</x:Text>
+    <x:Text>Tone</x:Text>
+    <x:Text>05 Clown Car</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>981.92286111585474</x:Number>
+    <x:Number>939.17576511621553</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>12</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>98</x:ColLast>
+    <x:Text>Josh Carlson</x:Text>
+    <x:Text>Josh Carlson HS</x:Text>
+    <x:Text>Josh</x:Text>
+    <x:Text>Carlson</x:Text>
+    <x:Text>95 Saturn SL1</x:Text>
+    <x:Text>HS</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>12</x:Row>
+    <x:ColFirst>100</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>13</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Ed York</x:Text>
+    <x:Text>Ed York SM2</x:Text>
+    <x:Text>Ed</x:Text>
+    <x:Text>York</x:Text>
+    <x:Text>88 Fiero</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>917.54261227156553</x:Number>
+    <x:Number>824.91811820919634</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>13</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Alex Haugen</x:Text>
+    <x:Text>Alex Haugen SM2</x:Text>
+    <x:Text>Alex</x:Text>
+    <x:Text>Haugen</x:Text>
+    <x:Text>07 WRX</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>949.49168952719072</x:Number>
+    <x:Number>863.76134738864653</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>13</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Ryan Tone</x:Text>
+    <x:Text>Ryan Tone HS</x:Text>
+    <x:Text>Ryan</x:Text>
+    <x:Text>Tone</x:Text>
+    <x:Text>05 Mini</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>963.00886843077649</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>13</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Chris Beckwith</x:Text>
+    <x:Text>Chris Beckwith SM2</x:Text>
+    <x:Text>Chris</x:Text>
+    <x:Text>Beckwith</x:Text>
+    <x:Text>06 Elise</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>13</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Kristen Shumard</x:Text>
+    <x:Text>Kristen Shumard FS</x:Text>
+    <x:Text>Kristen</x:Text>
+    <x:Text>Shumard</x:Text>
+    <x:Text>01 Firebird</x:Text>
+    <x:Text>FS</x:Text>
+    <x:Number>905.47439079422384</x:Number>
+    <x:Number>888.79795980511551</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>13</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Don Clayton</x:Text>
+    <x:Text>Don Clayton HS</x:Text>
+    <x:Text>Don</x:Text>
+    <x:Text>Clayton</x:Text>
+    <x:Text>00 S10 Xtreme FT</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>965.77679439194367</x:Number>
+    <x:Number>897.32688451127615</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>13</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Katie Haugen</x:Text>
+    <x:Text>Katie Haugen SM2</x:Text>
+    <x:Text>Katie</x:Text>
+    <x:Text>Haugen</x:Text>
+    <x:Text>07 WRX</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>920.86435710254693</x:Number>
+    <x:Number>834.46505616136596</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>13</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>78</x:ColLast>
+    <x:Text>David Price</x:Text>
+    <x:Text>David Price SS</x:Text>
+    <x:Text>David</x:Text>
+    <x:Text>Price</x:Text>
+    <x:Text>05 Boxster S</x:Text>
+    <x:Text>SS</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>13</x:Row>
+    <x:ColFirst>80</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>13</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text>Adam Moore</x:Text>
+    <x:Text>Adam Moore HS</x:Text>
+    <x:Text>Adam</x:Text>
+    <x:Text>Moore</x:Text>
+    <x:Text>00 S10 Xtreme FT</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>973.37428357234421</x:Number>
+    <x:Number>930.99934192350338</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>13</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text>Scott Shumard</x:Text>
+    <x:Text>Scott Shumard FS</x:Text>
+    <x:Text>Scott</x:Text>
+    <x:Text>Shumard</x:Text>
+    <x:Text>01 Firebird</x:Text>
+    <x:Text>FS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>971.662150404096</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>14</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Gary Patch</x:Text>
+    <x:Text>Gary Patch HS</x:Text>
+    <x:Text>Gary</x:Text>
+    <x:Text>Patch</x:Text>
+    <x:Text>02 Focus</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>970.36958884597152</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>14</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Joe Hesselman</x:Text>
+    <x:Text>Joe Hesselman SM2</x:Text>
+    <x:Text>Joe</x:Text>
+    <x:Text>Hesselman</x:Text>
+    <x:Text>BMW 325</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>14</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Adam Moore</x:Text>
+    <x:Text>Adam Moore HS</x:Text>
+    <x:Text>Adam</x:Text>
+    <x:Text>Moore</x:Text>
+    <x:Text>00 S10 Xtreme FT</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>989.1314722023385</x:Number>
+    <x:Number>952.54237977484217</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>14</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Alex Haugen</x:Text>
+    <x:Text>Alex Haugen SM2</x:Text>
+    <x:Text>Alex</x:Text>
+    <x:Text>Haugen</x:Text>
+    <x:Text>07 WRX</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>942.05643514948065</x:Number>
+    <x:Number>881.92746154714519</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>14</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Bill Porter</x:Text>
+    <x:Text>Bill Porter ES</x:Text>
+    <x:Text>Bill</x:Text>
+    <x:Text>Porter</x:Text>
+    <x:Text>92 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>988.55927938866057</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>14</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Erik Sua</x:Text>
+    <x:Text>Erik Sua HS</x:Text>
+    <x:Text>Erik</x:Text>
+    <x:Text>Sua</x:Text>
+    <x:Text>08 Subaru Legacy</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>14</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Ryan Tone</x:Text>
+    <x:Text>Ryan Tone HS</x:Text>
+    <x:Text>Ryan</x:Text>
+    <x:Text>Tone</x:Text>
+    <x:Text>05 Clown Car</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>932.70094366318472</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>14</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Ken Anderson</x:Text>
+    <x:Text>Ken Anderson SS</x:Text>
+    <x:Text>Ken</x:Text>
+    <x:Text>Anderson</x:Text>
+    <x:Text>07 Corvette</x:Text>
+    <x:Text>SS</x:Text>
+    <x:Number>839.3805309734513</x:Number>
+    <x:Number>821.2976796439965</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>14</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text>Corky Swanson Jr</x:Text>
+    <x:Text>Corky Swanson Jr HS</x:Text>
+    <x:Text>Corky</x:Text>
+    <x:Text>Swanson Jr</x:Text>
+    <x:Text>76  Mini</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>927.41935483870975</x:Number>
+    <x:Number>887.04501815388926</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>14</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>98</x:ColLast>
+    <x:Text>Steve McGivern</x:Text>
+    <x:Text>Steve McGivern FS</x:Text>
+    <x:Text>Steve</x:Text>
+    <x:Text>McGivern</x:Text>
+    <x:Text>00 Trans AM</x:Text>
+    <x:Text>FS</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>14</x:Row>
+    <x:ColFirst>100</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>15</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Adam Moore</x:Text>
+    <x:Text>Adam Moore HS</x:Text>
+    <x:Text>Adam</x:Text>
+    <x:Text>Moore</x:Text>
+    <x:Text>00 S10 Xtreme FT</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>976.97736378612535</x:Number>
+    <x:Number>948.02912280896362</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>15</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Brian Livingston</x:Text>
+    <x:Text>Brian Livingston SM2</x:Text>
+    <x:Text>Brian</x:Text>
+    <x:Text>Livingston</x:Text>
+    <x:Text>04 RX8</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>15</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Gary Patch</x:Text>
+    <x:Text>Gary Patch HS</x:Text>
+    <x:Text>Gary</x:Text>
+    <x:Text>Patch</x:Text>
+    <x:Text>02 Focus</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>982.70671344585639</x:Number>
+    <x:Number>946.35528011482154</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>15</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Ed York</x:Text>
+    <x:Text>Ed York SM2</x:Text>
+    <x:Text>Ed</x:Text>
+    <x:Text>York</x:Text>
+    <x:Text>88 Fiero</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>939.94568292406927</x:Number>
+    <x:Number>879.9514330602567</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>15</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Jason Green</x:Text>
+    <x:Text>Jason Green ES</x:Text>
+    <x:Text>Jason</x:Text>
+    <x:Text>Green</x:Text>
+    <x:Text>91 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>962.16979290251834</x:Number>
+    <x:Number>951.16187712125043</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>15</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Marcia Patch</x:Text>
+    <x:Text>Marcia Patch HS</x:Text>
+    <x:Text>Marcia</x:Text>
+    <x:Text>Patch</x:Text>
+    <x:Text>02 Focus</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>850.26124633617962</x:Number>
+    <x:Number>789.99855828580178</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>15</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Corky Swanson Jr</x:Text>
+    <x:Text>Corky Swanson Jr HS</x:Text>
+    <x:Text>Corky</x:Text>
+    <x:Text>Swanson Jr</x:Text>
+    <x:Text>76 Mini Cooper</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>984.26721752923379</x:Number>
+    <x:Number>918.02696260625351</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>15</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Ed York</x:Text>
+    <x:Text>Ed York SM2</x:Text>
+    <x:Text>Ed</x:Text>
+    <x:Text>York</x:Text>
+    <x:Text>88 Fiero</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>914.33025112203768</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>15</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text>Marcia Patch</x:Text>
+    <x:Text>Marcia Patch HS</x:Text>
+    <x:Text>Marcia</x:Text>
+    <x:Text>Patch</x:Text>
+    <x:Text>02 Focus</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>869.25535590877666</x:Number>
+    <x:Number>831.41313467257226</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>15</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text>Don Holzer</x:Text>
+    <x:Text>Don Holzer FS</x:Text>
+    <x:Text>Don</x:Text>
+    <x:Text>Holzer</x:Text>
+    <x:Text>89 TransAm</x:Text>
+    <x:Text>FS</x:Text>
+    <x:Number>859.39900153609835</x:Number>
+    <x:Number>835.04548188769832</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>16</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Marcia Patch</x:Text>
+    <x:Text>Marcia Patch HS</x:Text>
+    <x:Text>Marcia</x:Text>
+    <x:Text>Patch</x:Text>
+    <x:Text>02 Focus</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>853.67240674592597</x:Number>
+    <x:Number>828.37774234319511</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>16</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Blade McQuiggin</x:Text>
+    <x:Text>Blade McQuiggin SM2</x:Text>
+    <x:Text>Blade</x:Text>
+    <x:Text>McQuiggin</x:Text>
+    <x:Text>87 RX7</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>892.39402441798757</x:Number>
+    <x:Number>811.819074811169</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>16</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Marcia Patch</x:Text>
+    <x:Text>Marcia Patch HS</x:Text>
+    <x:Text>Marcia</x:Text>
+    <x:Text>Patch</x:Text>
+    <x:Text>02 Focus</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>913.02432631845579</x:Number>
+    <x:Number>879.25052333770816</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>16</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Blade McQuiggin</x:Text>
+    <x:Text>Blade McQuiggin SM2</x:Text>
+    <x:Text>Blade</x:Text>
+    <x:Text>McQuiggin</x:Text>
+    <x:Text>87 RX7</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>924.98802881992003</x:Number>
+    <x:Number>865.94848650357881</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>16</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Jeff Meyer</x:Text>
+    <x:Text>Jeff Meyer ES</x:Text>
+    <x:Text>Jeff</x:Text>
+    <x:Text>Meyer</x:Text>
+    <x:Text>91 Miata OPC</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>949.90140406541423</x:Number>
+    <x:Number>939.03384749318275</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>16</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Bart Borowski</x:Text>
+    <x:Text>Bart Borowski ES</x:Text>
+    <x:Text>Bart</x:Text>
+    <x:Text>Borowski</x:Text>
+    <x:Text>94 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>16</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Adam Moore</x:Text>
+    <x:Text>Adam Moore HS</x:Text>
+    <x:Text>Adam</x:Text>
+    <x:Text>Moore</x:Text>
+    <x:Text>00 S10 Xtreme FT</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>978.45617895122848</x:Number>
+    <x:Number>912.60700144088469</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>16</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Alex Haugen</x:Text>
+    <x:Text>Alex Haugen SM2</x:Text>
+    <x:Text>Alex</x:Text>
+    <x:Text>Haugen</x:Text>
+    <x:Text>07 WRX</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>945.61142668344075</x:Number>
+    <x:Number>864.60113322333859</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>16</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>87</x:ColLast>
+    <x:Text>Josh Carlson</x:Text>
+    <x:Text>Josh Carlson HS</x:Text>
+    <x:Text>Josh</x:Text>
+    <x:Text>Carlson</x:Text>
+    <x:Text>95 Saturn SL1</x:Text>
+    <x:Text>HS</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>16</x:Row>
+    <x:ColFirst>89</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>16</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text>Jason Green</x:Text>
+    <x:Text>Jason Green ES</x:Text>
+    <x:Text>Jason</x:Text>
+    <x:Text>Green</x:Text>
+    <x:Text>91 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>932.94150636761458</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>17</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Scott Shumard</x:Text>
+    <x:Text>Scott Shumard FS</x:Text>
+    <x:Text>Scott</x:Text>
+    <x:Text>Shumard</x:Text>
+    <x:Text>01 Firebird</x:Text>
+    <x:Text>FS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>913.35325055659553</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>17</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Gary Patch</x:Text>
+    <x:Text>Gary Patch HS</x:Text>
+    <x:Text>Gary</x:Text>
+    <x:Text>Patch</x:Text>
+    <x:Text>02 Focus</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>945.85953103040174</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>17</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Josh Carlson</x:Text>
+    <x:Text>Josh Carlson HS</x:Text>
+    <x:Text>Josh</x:Text>
+    <x:Text>Carlson</x:Text>
+    <x:Text>95 Saturn SLI</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>17</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Joe Hesselman</x:Text>
+    <x:Text>Joe Hesselman SM</x:Text>
+    <x:Text>Joe</x:Text>
+    <x:Text>Hesselman</x:Text>
+    <x:Text>BMW 325</x:Text>
+    <x:Text>SM</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>17</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Randy Tone</x:Text>
+    <x:Text>Randy Tone ES</x:Text>
+    <x:Text>Randy</x:Text>
+    <x:Text>Tone</x:Text>
+    <x:Text>91 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>941.51187397131423</x:Number>
+    <x:Number>930.74029966894989</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>17</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Hubert Borowski</x:Text>
+    <x:Text>Hubert Borowski ES</x:Text>
+    <x:Text>Hubert</x:Text>
+    <x:Text>Borowski</x:Text>
+    <x:Text>94 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>17</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Gary Patch</x:Text>
+    <x:Text>Gary Patch HS</x:Text>
+    <x:Text>Gary</x:Text>
+    <x:Text>Patch</x:Text>
+    <x:Text>02 FFFocus</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>976.91575440266547</x:Number>
+    <x:Number>911.170246010798</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>17</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Blade McQuiggin</x:Text>
+    <x:Text>Blade McQuiggin SM2</x:Text>
+    <x:Text>Blade</x:Text>
+    <x:Text>McQuiggin</x:Text>
+    <x:Text>87 RX7</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>942.19909341842038</x:Number>
+    <x:Number>861.48113369222062</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>17</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>87</x:ColLast>
+    <x:Text>Pam Tone</x:Text>
+    <x:Text>Pam Tone HS</x:Text>
+    <x:Text>Pam</x:Text>
+    <x:Text>Tone</x:Text>
+    <x:Text>05 Mini Cooper</x:Text>
+    <x:Text>HS</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>17</x:Row>
+    <x:ColFirst>89</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>17</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text>Randy Tone</x:Text>
+    <x:Text>Randy Tone ES</x:Text>
+    <x:Text>Randy</x:Text>
+    <x:Text>Tone</x:Text>
+    <x:Text>91 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>965.14542769822492</x:Number>
+    <x:Number>900.42422918059754</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>18</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Kristen Shumard</x:Text>
+    <x:Text>Kristen Shumard FS</x:Text>
+    <x:Text>Kristen</x:Text>
+    <x:Text>Shumard</x:Text>
+    <x:Text>01 Firebird</x:Text>
+    <x:Text>FS</x:Text>
+    <x:Number>955.1830510447586</x:Number>
+    <x:Number>872.4195445482967</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>18</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Ryan Tone</x:Text>
+    <x:Text>Ryan Tone HS</x:Text>
+    <x:Text>Ryan</x:Text>
+    <x:Text>Tone</x:Text>
+    <x:Text>05 Mini</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>988.91593409909262</x:Number>
+    <x:Number>935.37556165545948</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>18</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Steve Slininger</x:Text>
+    <x:Text>Steve Slininger GS</x:Text>
+    <x:Text>Steve</x:Text>
+    <x:Text>Slininger</x:Text>
+    <x:Text>04 Mini Cooper S</x:Text>
+    <x:Text>GS</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>18</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Ryan Tone</x:Text>
+    <x:Text>Ryan Tone HS</x:Text>
+    <x:Text>Ryan</x:Text>
+    <x:Text>Tone</x:Text>
+    <x:Text>05 Mini</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>935.50542428909125</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>18</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Steve Schaeffer</x:Text>
+    <x:Text>Steve Schaeffer ES</x:Text>
+    <x:Text>Steve</x:Text>
+    <x:Text>Schaeffer</x:Text>
+    <x:Text>91 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>18</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Jeff Meyer</x:Text>
+    <x:Text>Jeff Meyer ES</x:Text>
+    <x:Text>Jeff</x:Text>
+    <x:Text>Meyer</x:Text>
+    <x:Text>91 Miata OPC</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>929.5943501100769</x:Number>
+    <x:Number>916.92983865724284</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>18</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>69</x:ColLast>
+    <x:Text>Mike Holzinger</x:Text>
+    <x:Text>Mike Holzinger GS</x:Text>
+    <x:Text>Mike</x:Text>
+    <x:Text>Holzinger</x:Text>
+    <x:Text>04 Focus SVT</x:Text>
+    <x:Text>GS</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>18</x:Row>
+    <x:ColFirst>71</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>18</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Katie Haugen</x:Text>
+    <x:Text>Katie Haugen SM2</x:Text>
+    <x:Text>Katie</x:Text>
+    <x:Text>Haugen</x:Text>
+    <x:Text>07 WRX</x:Text>
+    <x:Text>SM2</x:Text>
+    <x:Number>925.27013416559942</x:Number>
+    <x:Number>846.00247412735393</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>18</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>87</x:ColLast>
+    <x:Text>Carl Kirkegaard</x:Text>
+    <x:Text>Carl Kirkegaard FS</x:Text>
+    <x:Text>Carl</x:Text>
+    <x:Text>Kirkegaard</x:Text>
+    <x:Text>08 Mustang Bullitt</x:Text>
+    <x:Text>FS</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>18</x:Row>
+    <x:ColFirst>89</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>18</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>98</x:ColLast>
+    <x:Text>Darrel Padberg</x:Text>
+    <x:Text>Darrel Padberg DSP</x:Text>
+    <x:Text>Darrel</x:Text>
+    <x:Text>Padberg</x:Text>
+    <x:Text>98 Dodge Neon</x:Text>
+    <x:Text>DSP</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>18</x:Row>
+    <x:ColFirst>100</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>19</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Don Holzer</x:Text>
+    <x:Text>Don Holzer FS</x:Text>
+    <x:Text>Don</x:Text>
+    <x:Text>Holzer</x:Text>
+    <x:Text>89 TransAm</x:Text>
+    <x:Text>FS</x:Text>
+    <x:Number>940.11724493498048</x:Number>
+    <x:Number>858.65914156567555</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>19</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Adam Moore</x:Text>
+    <x:Text>Adam Moore HS</x:Text>
+    <x:Text>Adam</x:Text>
+    <x:Text>Moore</x:Text>
+    <x:Text>00 S10 Xtreme FT</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>968.76539560547826</x:Number>
+    <x:Number>916.31598276587931</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>19</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Brian Shelangouski</x:Text>
+    <x:Text>Brian Shelangouski GS</x:Text>
+    <x:Text>Brian</x:Text>
+    <x:Text>Shelangouski</x:Text>
+    <x:Text>91 BMW 318i</x:Text>
+    <x:Text>GS</x:Text>
+    <x:Number>956.58560470050588</x:Number>
+    <x:Number>844.22925380068705</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>19</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Adam Moore</x:Text>
+    <x:Text>Adam Moore HS</x:Text>
+    <x:Text>Adam</x:Text>
+    <x:Text>Moore</x:Text>
+    <x:Text>00 S10 Xtreme FT</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>987.72173646600481</x:Number>
+    <x:Number>924.01904215218792</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>19</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Merle Jensen</x:Text>
+    <x:Text>Merle Jensen ES</x:Text>
+    <x:Text>Merle</x:Text>
+    <x:Text>Jensen</x:Text>
+    <x:Text>MR2</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>886.66841966868242</x:Number>
+    <x:Number>876.52429400435528</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>19</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Jason Green</x:Text>
+    <x:Text>Jason Green ES</x:Text>
+    <x:Text>Jason</x:Text>
+    <x:Text>Green</x:Text>
+    <x:Text>91 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>921.16119834978531</x:Number>
+    <x:Number>908.61157759851267</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>19</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>69</x:ColLast>
+    <x:Text>Steve Slininger</x:Text>
+    <x:Text>Steve Slininger GS</x:Text>
+    <x:Text>Steve</x:Text>
+    <x:Text>Slininger</x:Text>
+    <x:Text>04 Mini Cooper S</x:Text>
+    <x:Text>GS</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>19</x:Row>
+    <x:ColFirst>71</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>19</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Gary Patch</x:Text>
+    <x:Text>Gary Patch HS</x:Text>
+    <x:Text>Gary</x:Text>
+    <x:Text>Patch</x:Text>
+    <x:Text>02 FFFocus</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>932.89527405274805</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>19</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text>Don Holzer</x:Text>
+    <x:Text>Don Holzer FS</x:Text>
+    <x:Text>Don</x:Text>
+    <x:Text>Holzer</x:Text>
+    <x:Text>89 TransAm</x:Text>
+    <x:Text>FS</x:Text>
+    <x:Number>897.87981726601856</x:Number>
+    <x:Number>870.0458290251064</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>19</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>98</x:ColLast>
+    <x:Text>Jerry Hansen</x:Text>
+    <x:Text>Jerry Hansen DSP</x:Text>
+    <x:Text>Jerry</x:Text>
+    <x:Text>Hansen</x:Text>
+    <x:Text>98 Dodge Neon</x:Text>
+    <x:Text>DSP</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>19</x:Row>
+    <x:ColFirst>100</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>20</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Jeff Ziegenhorn</x:Text>
+    <x:Text>Jeff Ziegenhorn FS</x:Text>
+    <x:Text>Jeff</x:Text>
+    <x:Text>Ziegenhorn</x:Text>
+    <x:Text>91 Firebird</x:Text>
+    <x:Text>FS</x:Text>
+    <x:Number>896.92299284035641</x:Number>
+    <x:Number>819.20753100968943</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>20</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Marcia Patch</x:Text>
+    <x:Text>Marcia Patch HS</x:Text>
+    <x:Text>Marcia</x:Text>
+    <x:Text>Patch</x:Text>
+    <x:Text>02 Focus</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>886.69239926409568</x:Number>
+    <x:Number>838.68645693615929</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>20</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Scott Shumard</x:Text>
+    <x:Text>Scott Shumard FS</x:Text>
+    <x:Text>Scott</x:Text>
+    <x:Text>Shumard</x:Text>
+    <x:Text>Firebird</x:Text>
+    <x:Text>FS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>985.11060152539824</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>20</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Marcia Patch</x:Text>
+    <x:Text>Marcia Patch HS</x:Text>
+    <x:Text>Marcia</x:Text>
+    <x:Text>Patch</x:Text>
+    <x:Text>02 Focus</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>1</x:Number>
+    <x:Number>1</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>20</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Ken Kozol</x:Text>
+    <x:Text>Ken Kozol DS</x:Text>
+    <x:Text>Ken</x:Text>
+    <x:Text>Kozol</x:Text>
+    <x:Text>06 Speed 6</x:Text>
+    <x:Text>DS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>931.39347041343399</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>20</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Randy Tone</x:Text>
+    <x:Text>Randy Tone ES</x:Text>
+    <x:Text>Randy</x:Text>
+    <x:Text>Tone</x:Text>
+    <x:Text>91 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>916.96230837042299</x:Number>
+    <x:Number>904.46989202258339</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>20</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Scott Shumard</x:Text>
+    <x:Text>Scott Shumard FS</x:Text>
+    <x:Text>Scott</x:Text>
+    <x:Text>Shumard</x:Text>
+    <x:Text>01 Firebird</x:Text>
+    <x:Text>FS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>951.02686935075189</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>20</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Ryan Tone</x:Text>
+    <x:Text>Ryan Tone HS</x:Text>
+    <x:Text>Ryan</x:Text>
+    <x:Text>Tone</x:Text>
+    <x:Text>05 Clown Car</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>982.08063096020533</x:Number>
+    <x:Number>916.17837936151659</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>20</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text>Bill Porter</x:Text>
+    <x:Text>Bill Porter ES</x:Text>
+    <x:Text>Bill</x:Text>
+    <x:Text>Porter</x:Text>
+    <x:Text>92 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>951.33018802784761</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>20</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>98</x:ColLast>
+    <x:Text>Steve Schaffer</x:Text>
+    <x:Text>Steve Schaffer DSP</x:Text>
+    <x:Text>Steve</x:Text>
+    <x:Text>Schaffer</x:Text>
+    <x:Text>91 Miata</x:Text>
+    <x:Text>DSP</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>20</x:Row>
+    <x:ColFirst>100</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>21</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Jason Green</x:Text>
+    <x:Text>Jason Green ES</x:Text>
+    <x:Text>Jason</x:Text>
+    <x:Text>Green</x:Text>
+    <x:Text>91 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>960.43014401532957</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>21</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Scott Shumard</x:Text>
+    <x:Text>Scott Shumard FS</x:Text>
+    <x:Text>Scott</x:Text>
+    <x:Text>Shumard</x:Text>
+    <x:Text>01 Firebird</x:Text>
+    <x:Text>FS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>1000</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>21</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Don Holzer</x:Text>
+    <x:Text>Don Holzer FS</x:Text>
+    <x:Text>Don</x:Text>
+    <x:Text>Holzer</x:Text>
+    <x:Text>89 TransAm</x:Text>
+    <x:Text>FS</x:Text>
+    <x:Number>911.30122616438996</x:Number>
+    <x:Number>897.73249907763523</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>21</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Scott Shumard</x:Text>
+    <x:Text>Scott Shumard FS</x:Text>
+    <x:Text>Scott</x:Text>
+    <x:Text>Shumard</x:Text>
+    <x:Text>01 Firebird</x:Text>
+    <x:Text>FS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>983.03432331923841</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>21</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Brendon Johnson</x:Text>
+    <x:Text>Brendon Johnson DS</x:Text>
+    <x:Text>Brendon</x:Text>
+    <x:Text>Johnson</x:Text>
+    <x:Text>04 Audi TT</x:Text>
+    <x:Text>DS</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>21</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Mike Whitney</x:Text>
+    <x:Text>Mike Whitney CS</x:Text>
+    <x:Text>Mike</x:Text>
+    <x:Text>Whitney</x:Text>
+    <x:Text>04 MS Miata WC</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>972.17501309913507</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>21</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>69</x:ColLast>
+    <x:Text>Carl Kirkegaard</x:Text>
+    <x:Text>Carl Kirkegaard FS</x:Text>
+    <x:Text>Carl</x:Text>
+    <x:Text>Kirkegaard</x:Text>
+    <x:Text>08 Mustang Bullitt</x:Text>
+    <x:Text>FS</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>21</x:Row>
+    <x:ColFirst>71</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>21</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Adam Moore</x:Text>
+    <x:Text>Adam Moore HS</x:Text>
+    <x:Text>Adam</x:Text>
+    <x:Text>Moore</x:Text>
+    <x:Text>00 S10 Xtreme FT</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>965.49790305276508</x:Number>
+    <x:Number>900.70843086576281</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>21</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text>Jason Green</x:Text>
+    <x:Text>Jason Green ES</x:Text>
+    <x:Text>Jason</x:Text>
+    <x:Text>Green</x:Text>
+    <x:Text>91 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>969.52696357075763</x:Number>
+    <x:Number>922.3402685518372</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>21</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text>Mike Whitney</x:Text>
+    <x:Text>Mike Whitney CS</x:Text>
+    <x:Text>Mike</x:Text>
+    <x:Text>Whitney</x:Text>
+    <x:Text>04 MS Miata WC</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>1000</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>22</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Jeff Meyer</x:Text>
+    <x:Text>Jeff Meyer ES</x:Text>
+    <x:Text>Jeff</x:Text>
+    <x:Text>Meyer</x:Text>
+    <x:Text>91 Miata MT OPC</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>991.71620083470339</x:Number>
+    <x:Number>952.47413359000961</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>22</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Kristen Shumard</x:Text>
+    <x:Text>Kristen Shumard FS</x:Text>
+    <x:Text>Kristen</x:Text>
+    <x:Text>Shumard</x:Text>
+    <x:Text>01 Firebird</x:Text>
+    <x:Text>FS</x:Text>
+    <x:Number>907.77730556736094</x:Number>
+    <x:Number>907.77730556736094</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>22</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Jason Green</x:Text>
+    <x:Text>Jason Green ES</x:Text>
+    <x:Text>Jason</x:Text>
+    <x:Text>Green</x:Text>
+    <x:Text>91 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>952.12204903829581</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>22</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Kristen Shumard</x:Text>
+    <x:Text>Kristen Shumard FS</x:Text>
+    <x:Text>Kristen</x:Text>
+    <x:Text>Shumard</x:Text>
+    <x:Text>01 Firebird</x:Text>
+    <x:Text>FS</x:Text>
+    <x:Number>942.34115385927601</x:Number>
+    <x:Number>926.3536985199238</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>22</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Mike Whitney</x:Text>
+    <x:Text>Mike Whitney CS</x:Text>
+    <x:Text>Mike</x:Text>
+    <x:Text>Whitney</x:Text>
+    <x:Text>04 MS Miata WC</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>1000</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>22</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Glenn Campbell</x:Text>
+    <x:Text>Glenn Campbell CS</x:Text>
+    <x:Text>Glenn</x:Text>
+    <x:Text>Campbell</x:Text>
+    <x:Text>99 Miata</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>966.33577902460047</x:Number>
+    <x:Number>939.44749863140385</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>22</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Don Holzer</x:Text>
+    <x:Text>Don Holzer FS</x:Text>
+    <x:Text>Don</x:Text>
+    <x:Text>Holzer</x:Text>
+    <x:Text>89 TransAm</x:Text>
+    <x:Text>FS</x:Text>
+    <x:Number>915.53331157291541</x:Number>
+    <x:Number>870.69677909151631</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>22</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Corky Swanson Jr</x:Text>
+    <x:Text>Corky Swanson Jr HS</x:Text>
+    <x:Text>Corky</x:Text>
+    <x:Text>Swanson Jr</x:Text>
+    <x:Text>76  Mini</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>938.48432778337383</x:Number>
+    <x:Number>875.50759416167955</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>22</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text>Randy Tone</x:Text>
+    <x:Text>Randy Tone ES</x:Text>
+    <x:Text>Randy</x:Text>
+    <x:Text>Tone</x:Text>
+    <x:Text>91 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>956.12859197153216</x:Number>
+    <x:Number>909.59399317907901</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>22</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text>Jeff Meyer</x:Text>
+    <x:Text>Jeff Meyer CS</x:Text>
+    <x:Text>Jeff</x:Text>
+    <x:Text>Meyer</x:Text>
+    <x:Text>04 MS Miata OPC</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>964.71138553653293</x:Number>
+    <x:Number>964.71138553653293</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>23</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Randy Tone</x:Text>
+    <x:Text>Randy Tone ES</x:Text>
+    <x:Text>Randy</x:Text>
+    <x:Text>Tone</x:Text>
+    <x:Text>91 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>970.08247422680404</x:Number>
+    <x:Number>931.69645042839659</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>23</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Don Holzer</x:Text>
+    <x:Text>Don Holzer FS</x:Text>
+    <x:Text>Don</x:Text>
+    <x:Text>Holzer</x:Text>
+    <x:Text>89 TransAm</x:Text>
+    <x:Text>FS</x:Text>
+    <x:Number>870.6352749364338</x:Number>
+    <x:Number>870.6352749364338</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>23</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Jeff Meyer</x:Text>
+    <x:Text>Jeff Meyer ES</x:Text>
+    <x:Text>Jeff</x:Text>
+    <x:Text>Meyer</x:Text>
+    <x:Text>91 Miata OPC</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>996.66515454311377</x:Number>
+    <x:Number>948.94686914865906</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>23</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Don Holzer</x:Text>
+    <x:Text>Don Holzer FS</x:Text>
+    <x:Text>Don</x:Text>
+    <x:Text>Holzer</x:Text>
+    <x:Text>89 TransAm</x:Text>
+    <x:Text>FS</x:Text>
+    <x:Number>897.57032832522725</x:Number>
+    <x:Number>882.34244033661651</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>23</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Glenn Campbell</x:Text>
+    <x:Text>Glenn Campbell CS</x:Text>
+    <x:Text>Glenn</x:Text>
+    <x:Text>Campbell</x:Text>
+    <x:Text>99 Miata</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>959.56358256795909</x:Number>
+    <x:Number>959.5635825679592</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>23</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Cindyann Whitney</x:Text>
+    <x:Text>Cindyann Whitney CS</x:Text>
+    <x:Text>Cindyann</x:Text>
+    <x:Text>Whitney</x:Text>
+    <x:Text>04 MS Miata</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>926.4155052264806</x:Number>
+    <x:Number>900.63800592879568</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>23</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Kristen Shumard</x:Text>
+    <x:Text>Kristen Shumard FS</x:Text>
+    <x:Text>Kristen</x:Text>
+    <x:Text>Shumard</x:Text>
+    <x:Text>01 Firebird</x:Text>
+    <x:Text>FS</x:Text>
+    <x:Number>898.36298932384329</x:Number>
+    <x:Number>854.36734127723753</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>23</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Marcia Patch</x:Text>
+    <x:Text>Marcia Patch HS</x:Text>
+    <x:Text>Marcia</x:Text>
+    <x:Text>Patch</x:Text>
+    <x:Text>02 Focus</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Number>883.24057861102119</x:Number>
+    <x:Number>823.97096163783647</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>23</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text>Mike Whitney</x:Text>
+    <x:Text>Mike Whitney CS</x:Text>
+    <x:Text>Mike</x:Text>
+    <x:Text>Whitney</x:Text>
+    <x:Text>04 MS Miata WC</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>1000</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>23</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text>Cindyann Whitney</x:Text>
+    <x:Text>Cindyann Whitney CS</x:Text>
+    <x:Text>Cindyann</x:Text>
+    <x:Text>Whitney</x:Text>
+    <x:Text>04 MS Miata</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>931.91266312402854</x:Number>
+    <x:Number>931.91266312402854</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>24</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Mike Whitney</x:Text>
+    <x:Text>Mike Whitney CS</x:Text>
+    <x:Text>Mike</x:Text>
+    <x:Text>Whitney</x:Text>
+    <x:Text>04 MS Miata</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>1000</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>24</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Jeff Ziegenhorn</x:Text>
+    <x:Text>Jeff Ziegenhorn FS</x:Text>
+    <x:Text>Jeff</x:Text>
+    <x:Text>Ziegenhorn</x:Text>
+    <x:Text>91 Firebird</x:Text>
+    <x:Text>FS</x:Text>
+    <x:Number>851.6908120834679</x:Number>
+    <x:Number>851.6908120834679</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>24</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Bill Porter</x:Text>
+    <x:Text>Bill Porter ES</x:Text>
+    <x:Text>Bill</x:Text>
+    <x:Text>Porter</x:Text>
+    <x:Text>92 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>993.88685796725792</x:Number>
+    <x:Number>946.30159172001925</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>24</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Brian Bunker</x:Text>
+    <x:Text>Brian Bunker ESP</x:Text>
+    <x:Text>Brian</x:Text>
+    <x:Text>Bunker</x:Text>
+    <x:Text>02 WRX Wagon</x:Text>
+    <x:Text>ESP</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>945.0465100458257</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>24</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Cindyann Whitney</x:Text>
+    <x:Text>Cindyann Whitney CS</x:Text>
+    <x:Text>Cindyann</x:Text>
+    <x:Text>Whitney</x:Text>
+    <x:Text>04 MS Miata</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>948.96139719889652</x:Number>
+    <x:Number>948.96139719889663</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>24</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Dylan Campbell</x:Text>
+    <x:Text>Dylan Campbell CS</x:Text>
+    <x:Text>Dylan</x:Text>
+    <x:Text>Campbell</x:Text>
+    <x:Text>99 Miata</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>913.26935875142215</x:Number>
+    <x:Number>887.85765080720262</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>24</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Jeff Meyer</x:Text>
+    <x:Text>Jeff Meyer ES</x:Text>
+    <x:Text>Jeff</x:Text>
+    <x:Text>Meyer</x:Text>
+    <x:Text>91 Miata OPC</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>936.88523166131677</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>24</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>78</x:ColLast>
+    <x:Text>Mike Holzinger</x:Text>
+    <x:Text>Mike Holzinger GS</x:Text>
+    <x:Text>Mike</x:Text>
+    <x:Text>Holzinger</x:Text>
+    <x:Text>04 Focus SVT</x:Text>
+    <x:Text>GS</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>24</x:Row>
+    <x:ColFirst>80</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>24</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text>Glenn Campbell</x:Text>
+    <x:Text>Glenn Campbell CS</x:Text>
+    <x:Text>Glenn</x:Text>
+    <x:Text>Campbell</x:Text>
+    <x:Text>99 Miata</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>973.28770757069356</x:Number>
+    <x:Number>973.28770757069344</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>24</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text>Randy Crouch</x:Text>
+    <x:Text>Randy Crouch BS</x:Text>
+    <x:Text>Randy</x:Text>
+    <x:Text>Crouch</x:Text>
+    <x:Text>03 Nissan</x:Text>
+    <x:Text>BS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>950.12970568407604</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>25</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Glenn Campbell</x:Text>
+    <x:Text>Glenn Campbell CS</x:Text>
+    <x:Text>Glenn</x:Text>
+    <x:Text>Campbell</x:Text>
+    <x:Text>99 Miata</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>996.07632115871854</x:Number>
+    <x:Number>996.07632115871843</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>25</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Jason Green</x:Text>
+    <x:Text>Jason Green ES</x:Text>
+    <x:Text>Jason</x:Text>
+    <x:Text>Green</x:Text>
+    <x:Text>91 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>911.87112030859055</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>25</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Randy Tone</x:Text>
+    <x:Text>Randy Tone ES</x:Text>
+    <x:Text>Randy</x:Text>
+    <x:Text>Tone</x:Text>
+    <x:Text>91 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>954.36615088403107</x:Number>
+    <x:Number>908.67305511249492</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>25</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Chad Bremer</x:Text>
+    <x:Text>Chad Bremer ESP</x:Text>
+    <x:Text>Chad</x:Text>
+    <x:Text>Bremer</x:Text>
+    <x:Text>02 WRX Wagon</x:Text>
+    <x:Text>ESP</x:Text>
+    <x:Number>981.15627696541435</x:Number>
+    <x:Number>927.23831535572049</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>25</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Dylan Campbell</x:Text>
+    <x:Text>Dylan Campbell CS</x:Text>
+    <x:Text>Dylan</x:Text>
+    <x:Text>Campbell</x:Text>
+    <x:Text>99 Miata</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>933.69320737741793</x:Number>
+    <x:Number>933.69320737741793</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>25</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Eric Tucker</x:Text>
+    <x:Text>Eric Tucker BS</x:Text>
+    <x:Text>Eric</x:Text>
+    <x:Text>Tucker</x:Text>
+    <x:Text>07 RX8</x:Text>
+    <x:Text>BS</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>25</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Bill Porter</x:Text>
+    <x:Text>Bill Porter ES</x:Text>
+    <x:Text>Bill</x:Text>
+    <x:Text>Porter</x:Text>
+    <x:Text>92 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>997.86867140725815</x:Number>
+    <x:Number>934.88842137895949</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>25</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Brian Shelangouski</x:Text>
+    <x:Text>Brian Shelangouski GS</x:Text>
+    <x:Text>Brian</x:Text>
+    <x:Text>Shelangouski</x:Text>
+    <x:Text>91 BMW 318i</x:Text>
+    <x:Text>GS</x:Text>
+    <x:Number>837.63134851138352</x:Number>
+    <x:Number>785.84456555606891</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>25</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text>Cindyann Whitney</x:Text>
+    <x:Text>Cindyann Whitney CS</x:Text>
+    <x:Text>Cindyann</x:Text>
+    <x:Text>Whitney</x:Text>
+    <x:Text>04 MS Miata</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>954.77373858284113</x:Number>
+    <x:Number>954.77373858284125</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>25</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text>Matt Newberg</x:Text>
+    <x:Text>Matt Newberg STU</x:Text>
+    <x:Text>Matt</x:Text>
+    <x:Text>Newberg</x:Text>
+    <x:Text>04 RX8</x:Text>
+    <x:Text>STU</x:Text>
+    <x:Number>951.6158269777128</x:Number>
+    <x:Number>904.15846561064279</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>26</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Dylan Campbell</x:Text>
+    <x:Text>Dylan Campbell CS</x:Text>
+    <x:Text>Dylan</x:Text>
+    <x:Text>Campbell</x:Text>
+    <x:Text>99 Miata</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>928.46245480574305</x:Number>
+    <x:Number>928.46245480574305</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>26</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Randy Tone</x:Text>
+    <x:Text>Randy Tone ES</x:Text>
+    <x:Text>Randy</x:Text>
+    <x:Text>Tone</x:Text>
+    <x:Text>91 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>969.36894536612147</x:Number>
+    <x:Number>883.93954620336217</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>26</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Mike Whitney</x:Text>
+    <x:Text>Mike Whitney CS</x:Text>
+    <x:Text>Mike</x:Text>
+    <x:Text>Whitney</x:Text>
+    <x:Text>04 Miata</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>1000</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>26</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Bill Porter</x:Text>
+    <x:Text>Bill Porter ES</x:Text>
+    <x:Text>Bill</x:Text>
+    <x:Text>Porter</x:Text>
+    <x:Text>92 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>957.92822113695263</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>26</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>David Price</x:Text>
+    <x:Text>David Price SS</x:Text>
+    <x:Text>David</x:Text>
+    <x:Text>Price</x:Text>
+    <x:Text>05 Boxster S</x:Text>
+    <x:Text>SS</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>26</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Randy Crouch</x:Text>
+    <x:Text>Randy Crouch BS</x:Text>
+    <x:Text>Randy</x:Text>
+    <x:Text>Crouch</x:Text>
+    <x:Text>03 Nissan</x:Text>
+    <x:Text>BS</x:Text>
+    <x:Number>957.0732373838589</x:Number>
+    <x:Number>940.69022003797818</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>26</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Jason Green</x:Text>
+    <x:Text>Jason Green ES</x:Text>
+    <x:Text>Jason</x:Text>
+    <x:Text>Green</x:Text>
+    <x:Text>91 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>995.49619205938052</x:Number>
+    <x:Number>932.66568051551144</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>26</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Scott Shumard</x:Text>
+    <x:Text>Scott Shumard FS</x:Text>
+    <x:Text>Scott</x:Text>
+    <x:Text>Shumard</x:Text>
+    <x:Text>01 Firebird</x:Text>
+    <x:Text>FS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>959.8145805422065</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>26</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text>Randy Crouch</x:Text>
+    <x:Text>Randy Crouch BS</x:Text>
+    <x:Text>Randy</x:Text>
+    <x:Text>Crouch</x:Text>
+    <x:Text>03 Nissan</x:Text>
+    <x:Text>BS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>962.26499948494427</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>26</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text>Craig Coleman</x:Text>
+    <x:Text>Craig Coleman FSP</x:Text>
+    <x:Text>Craig</x:Text>
+    <x:Text>Coleman</x:Text>
+    <x:Text>78 MGB</x:Text>
+    <x:Text>FSP</x:Text>
+    <x:Number>925.4467651393162</x:Number>
+    <x:Number>879.29446258809878</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>27</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>David Livingston</x:Text>
+    <x:Text>David Livingston BSP</x:Text>
+    <x:Text>David</x:Text>
+    <x:Text>Livingston</x:Text>
+    <x:Text>94 3000gt VR4</x:Text>
+    <x:Text>BSP</x:Text>
+    <x:Text></x:Text>
+    <x:Text></x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>27</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Merle Jensen</x:Text>
+    <x:Text>Merle Jensen ES</x:Text>
+    <x:Text>Merle</x:Text>
+    <x:Text>Jensen</x:Text>
+    <x:Text>91 MR2</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>937.57942453957492</x:Number>
+    <x:Number>854.95160023318579</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>27</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Cindyann Whitney</x:Text>
+    <x:Text>Cindyann Whitney CS</x:Text>
+    <x:Text>Cindyann</x:Text>
+    <x:Text>Whitney</x:Text>
+    <x:Text>04 Miata</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>946.25514505639353</x:Number>
+    <x:Number>946.25514505639353</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>27</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Jason Green</x:Text>
+    <x:Text>Jason Green ES</x:Text>
+    <x:Text>Jason</x:Text>
+    <x:Text>Green</x:Text>
+    <x:Text>91 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>982.90676942543291</x:Number>
+    <x:Number>941.55413317917373</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>27</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Randy Crouch</x:Text>
+    <x:Text>Randy Crouch BS</x:Text>
+    <x:Text>Randy</x:Text>
+    <x:Text>Crouch</x:Text>
+    <x:Text>03 Nissan</x:Text>
+    <x:Text>BS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>956.55293386210201</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>27</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Aruch Poonsapaya</x:Text>
+    <x:Text>Aruch Poonsapaya AS</x:Text>
+    <x:Text>Aruch</x:Text>
+    <x:Text>Poonsapaya</x:Text>
+    <x:Text>01 S2000</x:Text>
+    <x:Text>AS</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>27</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Randy Tone</x:Text>
+    <x:Text>Randy Tone ES</x:Text>
+    <x:Text>Randy</x:Text>
+    <x:Text>Tone</x:Text>
+    <x:Text>91 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>972.41418375438991</x:Number>
+    <x:Number>911.04048781748179</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>27</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>78</x:ColLast>
+    <x:Text>Carl Kirkegaard</x:Text>
+    <x:Text>Carl Kirkegaard FS</x:Text>
+    <x:Text>Carl</x:Text>
+    <x:Text>Kirkegaard</x:Text>
+    <x:Text>08 Mustang Bullitt</x:Text>
+    <x:Text>FS</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>27</x:Row>
+    <x:ColFirst>80</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>27</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text>Jeff Meyer</x:Text>
+    <x:Text>Jeff Meyer BS</x:Text>
+    <x:Text>Jeff</x:Text>
+    <x:Text>Meyer</x:Text>
+    <x:Text>03 Nissan 350Z</x:Text>
+    <x:Text>BS</x:Text>
+    <x:Number>973.29346520483546</x:Number>
+    <x:Number>936.56623579403049</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>27</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text>Ken Anderson</x:Text>
+    <x:Text>Ken Anderson SS</x:Text>
+    <x:Text>Ken</x:Text>
+    <x:Text>Anderson</x:Text>
+    <x:Text>07 Corvette</x:Text>
+    <x:Text>SS</x:Text>
+    <x:Number>856.19974328285809</x:Number>
+    <x:Number>813.50081009212329</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>28</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Scott Hofstetter</x:Text>
+    <x:Text>Scott Hofstetter BSP</x:Text>
+    <x:Text>Scott</x:Text>
+    <x:Text>Hofstetter</x:Text>
+    <x:Text>74 260Z</x:Text>
+    <x:Text>BSP</x:Text>
+    <x:Text></x:Text>
+    <x:Text></x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>28</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Mike Whitney</x:Text>
+    <x:Text>Mike Whitney CS</x:Text>
+    <x:Text>Mike</x:Text>
+    <x:Text>Whitney</x:Text>
+    <x:Text>04 Miata</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>993.85998220448971</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>28</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Barry Packer</x:Text>
+    <x:Text>Barry Packer BP</x:Text>
+    <x:Text>Barry</x:Text>
+    <x:Text>Packer</x:Text>
+    <x:Text>72 Corvette</x:Text>
+    <x:Text>BP</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>890.42822967618849</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>28</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Jeff Meyer</x:Text>
+    <x:Text>Jeff Meyer ES</x:Text>
+    <x:Text>Jeff</x:Text>
+    <x:Text>Meyer</x:Text>
+    <x:Text>91 Miata OPC</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>970.68044984664311</x:Number>
+    <x:Number>929.84219661401175</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>28</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Brian Bunker</x:Text>
+    <x:Text>Brian Bunker ESP</x:Text>
+    <x:Text>Brian</x:Text>
+    <x:Text>Bunker</x:Text>
+    <x:Text>02 WRX Wagon</x:Text>
+    <x:Text>ESP</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>942.02767736445003</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>28</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Mark Miculinic</x:Text>
+    <x:Text>Mark Miculinic AS</x:Text>
+    <x:Text>Mark</x:Text>
+    <x:Text>Miculinic</x:Text>
+    <x:Text>01 S2000</x:Text>
+    <x:Text>AS</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>28</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>69</x:ColLast>
+    <x:Text>Jeff Ellerby</x:Text>
+    <x:Text>Jeff Ellerby DM</x:Text>
+    <x:Text>Jeff</x:Text>
+    <x:Text>Ellerby</x:Text>
+    <x:Text>94 Westfield</x:Text>
+    <x:Text>DM</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>28</x:Row>
+    <x:ColFirst>71</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>28</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Kristen Shumard</x:Text>
+    <x:Text>Kristen Shumard FS</x:Text>
+    <x:Text>Kristen</x:Text>
+    <x:Text>Shumard</x:Text>
+    <x:Text>01 Firebird</x:Text>
+    <x:Text>FS</x:Text>
+    <x:Number>912.51397883818959</x:Number>
+    <x:Number>875.84422183747677</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>28</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>87</x:ColLast>
+    <x:Text>David Price</x:Text>
+    <x:Text>David Price SS</x:Text>
+    <x:Text>David</x:Text>
+    <x:Text>Price</x:Text>
+    <x:Text>05 Boxster S</x:Text>
+    <x:Text>SS</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>28</x:Row>
+    <x:ColFirst>89</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>28</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>98</x:ColLast>
+    <x:Text>Tina Olson</x:Text>
+    <x:Text>Tina Olson STSL</x:Text>
+    <x:Text>Tina</x:Text>
+    <x:Text>Olson</x:Text>
+    <x:Text>03 Lancer OZ</x:Text>
+    <x:Text>STSL</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>28</x:Row>
+    <x:ColFirst>100</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>29</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Paul Gilbert</x:Text>
+    <x:Text>Paul Gilbert DSP</x:Text>
+    <x:Text>Paul</x:Text>
+    <x:Text>Gilbert</x:Text>
+    <x:Text>95 Spec Miata</x:Text>
+    <x:Text>DSP</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>977.79765614645771</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>29</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Glenn Campbell</x:Text>
+    <x:Text>Glenn Campbell CS</x:Text>
+    <x:Text>Glenn</x:Text>
+    <x:Text>Campbell</x:Text>
+    <x:Text>99 Miata</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>978.75235962948341</x:Number>
+    <x:Number>972.74280272396072</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>29</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Kristine Fuller</x:Text>
+    <x:Text>Kristine Fuller BP</x:Text>
+    <x:Text>Kristine</x:Text>
+    <x:Text>Fuller</x:Text>
+    <x:Text>72 Corvette</x:Text>
+    <x:Text>BP</x:Text>
+    <x:Number>756.1828006565479</x:Number>
+    <x:Number>673.32651250019217</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>29</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Randy Tone</x:Text>
+    <x:Text>Randy Tone ES</x:Text>
+    <x:Text>Randy</x:Text>
+    <x:Text>Tone</x:Text>
+    <x:Text>91 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>938.55650626626971</x:Number>
+    <x:Number>899.06976448416071</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>29</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Steve Slininger</x:Text>
+    <x:Text>Steve Slininger GS</x:Text>
+    <x:Text>Steve</x:Text>
+    <x:Text>Slininger</x:Text>
+    <x:Text>04 Mini Cooper S</x:Text>
+    <x:Text>GS</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>29</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>David Price</x:Text>
+    <x:Text>David Price SS</x:Text>
+    <x:Text>David</x:Text>
+    <x:Text>Price</x:Text>
+    <x:Text>05 Boxster S</x:Text>
+    <x:Text>SS</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>29</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>69</x:ColLast>
+    <x:Text>Kevin Frett</x:Text>
+    <x:Text>Kevin Frett DM</x:Text>
+    <x:Text>Kevin</x:Text>
+    <x:Text>Frett</x:Text>
+    <x:Text>94 Westfield</x:Text>
+    <x:Text>DM</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>29</x:Row>
+    <x:ColFirst>71</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>29</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Don Holzer</x:Text>
+    <x:Text>Don Holzer FS</x:Text>
+    <x:Text>Don</x:Text>
+    <x:Text>Holzer</x:Text>
+    <x:Text>89 TransAm</x:Text>
+    <x:Text>FS</x:Text>
+    <x:Number>840.87151495934597</x:Number>
+    <x:Number>807.08074042059445</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>29</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text>Paul Gilbert</x:Text>
+    <x:Text>Paul Gilbert DSP</x:Text>
+    <x:Text>Paul</x:Text>
+    <x:Text>Gilbert</x:Text>
+    <x:Text>95 Miata</x:Text>
+    <x:Text>DSP</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>928.06907998186875</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>29</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>98</x:ColLast>
+    <x:Text>Russell Jones</x:Text>
+    <x:Text>Russell Jones BS</x:Text>
+    <x:Text>Russell</x:Text>
+    <x:Text>Jones</x:Text>
+    <x:Text>03 350Z</x:Text>
+    <x:Text>BS</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>29</x:Row>
+    <x:ColFirst>100</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>30</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Brian Bunker</x:Text>
+    <x:Text>Brian Bunker ESP</x:Text>
+    <x:Text>Brian</x:Text>
+    <x:Text>Bunker</x:Text>
+    <x:Text>02 WRX Wagon</x:Text>
+    <x:Text>ESP</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>952.43540722811611</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>30</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Cindyann Whitney</x:Text>
+    <x:Text>Cindyann Whitney CS</x:Text>
+    <x:Text>Cindyann</x:Text>
+    <x:Text>Whitney</x:Text>
+    <x:Text>04 Miata</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>941.9493852718748</x:Number>
+    <x:Number>936.16579928383544</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>30</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Randy Crouch</x:Text>
+    <x:Text>Randy Crouch BS</x:Text>
+    <x:Text>Randy</x:Text>
+    <x:Text>Crouch</x:Text>
+    <x:Text>03 Nissan</x:Text>
+    <x:Text>BS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>966.94154936848349</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>30</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Mike Whitney</x:Text>
+    <x:Text>Mike Whitney CS</x:Text>
+    <x:Text>Mike</x:Text>
+    <x:Text>Whitney</x:Text>
+    <x:Text>04 Miata</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>1000</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>30</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Thomas Drabek</x:Text>
+    <x:Text>Thomas Drabek AS</x:Text>
+    <x:Text>Thomas</x:Text>
+    <x:Text>Drabek</x:Text>
+    <x:Text>08 Solstice </x:Text>
+    <x:Text>AS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>883.74182207567935</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>30</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Scott Shumard</x:Text>
+    <x:Text>Scott Shumard FS</x:Text>
+    <x:Text>Scott</x:Text>
+    <x:Text>Shumard</x:Text>
+    <x:Text>01 Firebird</x:Text>
+    <x:Text>FS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>957.45843404506513</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>30</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Glenn Campbell</x:Text>
+    <x:Text>Glenn Campbell CS</x:Text>
+    <x:Text>Glenn</x:Text>
+    <x:Text>Campbell</x:Text>
+    <x:Text>99 Miata</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>960.72344200556017</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>30</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Bill Porter</x:Text>
+    <x:Text>Bill Porter ES</x:Text>
+    <x:Text>Bill</x:Text>
+    <x:Text>Porter</x:Text>
+    <x:Text>92 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>944.71715267037666</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>30</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>87</x:ColLast>
+    <x:Text>Joe Hesselman</x:Text>
+    <x:Text>Joe Hesselman SM</x:Text>
+    <x:Text>Joe</x:Text>
+    <x:Text>Hesselman</x:Text>
+    <x:Text>90 BMW 325is</x:Text>
+    <x:Text>SM</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>30</x:Row>
+    <x:ColFirst>89</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>30</x:Row>
+    <x:ColFirst>93</x:ColFirst>
+    <x:ColLast>98</x:ColLast>
+    <x:Text>Josh Stokes</x:Text>
+    <x:Text>Josh Stokes HS</x:Text>
+    <x:Text>Josh</x:Text>
+    <x:Text>Stokes</x:Text>
+    <x:Text>Blue Cavalier</x:Text>
+    <x:Text>HS</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>30</x:Row>
+    <x:ColFirst>100</x:ColFirst>
+    <x:ColLast>100</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>31</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Randy Crouch</x:Text>
+    <x:Text>Randy Crouch BS</x:Text>
+    <x:Text>Randy</x:Text>
+    <x:Text>Crouch</x:Text>
+    <x:Text>03 Nissan 350</x:Text>
+    <x:Text>BS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>950.42738589724388</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>31</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Dylan Campbell</x:Text>
+    <x:Text>Dylan Campbell CS</x:Text>
+    <x:Text>Dylan</x:Text>
+    <x:Text>Campbell</x:Text>
+    <x:Text>99 Miata</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>906.76156583629904</x:Number>
+    <x:Number>901.19403368577935</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>31</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Chad Bremer</x:Text>
+    <x:Text>Chad Bremer STX</x:Text>
+    <x:Text>Chad</x:Text>
+    <x:Text>Bremer</x:Text>
+    <x:Text>04 Cavalier</x:Text>
+    <x:Text>STX</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>965.62510593864158</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>31</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Glenn Campbell</x:Text>
+    <x:Text>Glenn Campbell CS</x:Text>
+    <x:Text>Glenn</x:Text>
+    <x:Text>Campbell</x:Text>
+    <x:Text>99 Miata</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>969.94058021670753</x:Number>
+    <x:Number>969.94058021670753</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>31</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Craig Coleman</x:Text>
+    <x:Text>Craig Coleman FSP</x:Text>
+    <x:Text>Craig</x:Text>
+    <x:Text>Coleman</x:Text>
+    <x:Text>78 MGB</x:Text>
+    <x:Text>FSP</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>876.04356347379019</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>31</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Brian Bunker</x:Text>
+    <x:Text>Brian Bunker ESP</x:Text>
+    <x:Text>Brian</x:Text>
+    <x:Text>Bunker</x:Text>
+    <x:Text>02 WRX Wagon</x:Text>
+    <x:Text>ESP</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>887.01208760887107</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>31</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Mike Whitney</x:Text>
+    <x:Text>Mike Whitney CS</x:Text>
+    <x:Text>Mike</x:Text>
+    <x:Text>Whitney</x:Text>
+    <x:Text>04 MS Miata WC</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>998.50356918970294</x:Number>
+    <x:Number>959.28578584676836</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>31</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Jason Green</x:Text>
+    <x:Text>Jason Green ES</x:Text>
+    <x:Text>Jason</x:Text>
+    <x:Text>Green</x:Text>
+    <x:Text>91 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>971.13869566888275</x:Number>
+    <x:Number>917.45138342033044</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>31</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text>Barry Packer</x:Text>
+    <x:Text>Barry Packer BP</x:Text>
+    <x:Text>Barry</x:Text>
+    <x:Text>Packer</x:Text>
+    <x:Text>72 Corvette</x:Text>
+    <x:Text>BP</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>897.91403918033802</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>32</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Dave Belville</x:Text>
+    <x:Text>Dave Belville STU</x:Text>
+    <x:Text>Dave</x:Text>
+    <x:Text>Belville</x:Text>
+    <x:Text>03 Mustang GT</x:Text>
+    <x:Text>STU</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>887.07122374865025</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>32</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Mike Phelps</x:Text>
+    <x:Text>Mike Phelps AS</x:Text>
+    <x:Text>Mike</x:Text>
+    <x:Text>Phelps</x:Text>
+    <x:Text>00 S2000</x:Text>
+    <x:Text>AS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>929.37386919014148</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>32</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Brian Bunker</x:Text>
+    <x:Text>Brian Bunker ESP</x:Text>
+    <x:Text>Brian</x:Text>
+    <x:Text>Bunker</x:Text>
+    <x:Text>02 WRX Wagon</x:Text>
+    <x:Text>ESP</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>941.85519972441534</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>32</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Cindyann Whitney</x:Text>
+    <x:Text>Cindyann Whitney CS</x:Text>
+    <x:Text>Cindyann</x:Text>
+    <x:Text>Whitney</x:Text>
+    <x:Text>04 Miata</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>940.41414448313742</x:Number>
+    <x:Number>940.41414448313742</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>32</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Ron Johnson</x:Text>
+    <x:Text>Ron Johnson ASP</x:Text>
+    <x:Text>Ron</x:Text>
+    <x:Text>Johnson</x:Text>
+    <x:Text>03 Vette</x:Text>
+    <x:Text>ASP</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>830.62811956836049</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>32</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Craig Coleman</x:Text>
+    <x:Text>Craig Coleman FSP</x:Text>
+    <x:Text>Craig</x:Text>
+    <x:Text>Coleman</x:Text>
+    <x:Text>78 MGB</x:Text>
+    <x:Text>FSP</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>885.34580802987057</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>32</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Cindyann Whitney</x:Text>
+    <x:Text>Cindyann Whitney CS</x:Text>
+    <x:Text>Cindyann</x:Text>
+    <x:Text>Whitney</x:Text>
+    <x:Text>04 MS Miata</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>965.03537505374663</x:Number>
+    <x:Number>927.13210717876223</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>32</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Randy Tone</x:Text>
+    <x:Text>Randy Tone ES</x:Text>
+    <x:Text>Randy</x:Text>
+    <x:Text>Tone</x:Text>
+    <x:Text>91 Miata</x:Text>
+    <x:Text>ES</x:Text>
+    <x:Number>955.29121197610812</x:Number>
+    <x:Number>902.47999374910216</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>32</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text>Craig Coleman</x:Text>
+    <x:Text>Craig Coleman FSP</x:Text>
+    <x:Text>Craig</x:Text>
+    <x:Text>Coleman</x:Text>
+    <x:Text>78 MGB</x:Text>
+    <x:Text>FSP</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>897.21802045654044</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>33</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Ken Kozol</x:Text>
+    <x:Text>Ken Kozol DS</x:Text>
+    <x:Text>Ken</x:Text>
+    <x:Text>Kozol</x:Text>
+    <x:Text>06 MS Mazda 6</x:Text>
+    <x:Text>DS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>883.28880443226296</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>33</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Thomas Drabek</x:Text>
+    <x:Text>Thomas Drabek AS</x:Text>
+    <x:Text>Thomas</x:Text>
+    <x:Text>Drabek</x:Text>
+    <x:Text>08 Soltice GXP</x:Text>
+    <x:Text>AS</x:Text>
+    <x:Number>963.77227114478796</x:Number>
+    <x:Number>895.70476465200181</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>33</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>John Vinton</x:Text>
+    <x:Text>John Vinton AS</x:Text>
+    <x:Text>John</x:Text>
+    <x:Text>Vinton</x:Text>
+    <x:Text>87 Corvette</x:Text>
+    <x:Text>AS</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>33</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Barry Packer</x:Text>
+    <x:Text>Barry Packer BP</x:Text>
+    <x:Text>Barry</x:Text>
+    <x:Text>Packer</x:Text>
+    <x:Text>72 Corvette</x:Text>
+    <x:Text>BP</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>902.62815084656813</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>33</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Ken Anderson</x:Text>
+    <x:Text>Ken Anderson FM</x:Text>
+    <x:Text>Ken</x:Text>
+    <x:Text>Anderson</x:Text>
+    <x:Text>84 T-84</x:Text>
+    <x:Text>FM</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>790.73412387326039</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>33</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Ken Kozol</x:Text>
+    <x:Text>Ken Kozol DS</x:Text>
+    <x:Text>Ken</x:Text>
+    <x:Text>Kozol</x:Text>
+    <x:Text>06 MazdaSpeed 6</x:Text>
+    <x:Text>DS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>881.93655563291668</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>33</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Randy Crouch</x:Text>
+    <x:Text>Randy Crouch BS</x:Text>
+    <x:Text>Randy</x:Text>
+    <x:Text>Crouch</x:Text>
+    <x:Text>03 Nissan</x:Text>
+    <x:Text>BS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>944.53332137232621</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>33</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>78</x:ColLast>
+    <x:Text>Jeff Christianson</x:Text>
+    <x:Text>Jeff Christianson EM</x:Text>
+    <x:Text>Jeff</x:Text>
+    <x:Text>Christianson</x:Text>
+    <x:Text>98 Westfield Sei</x:Text>
+    <x:Text>EM</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>33</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text>Brian Bunker</x:Text>
+    <x:Text>Brian Bunker ESP</x:Text>
+    <x:Text>Brian</x:Text>
+    <x:Text>Bunker</x:Text>
+    <x:Text>03 Mach 1</x:Text>
+    <x:Text>ESP</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>887.42159298501383</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>34</x:Row>
+    <x:ColFirst>0</x:ColFirst>
+    <x:ColLast>7</x:ColLast>
+    <x:Text>Thomas Drabek</x:Text>
+    <x:Text>Thomas Drabek AS</x:Text>
+    <x:Text>Thomas</x:Text>
+    <x:Text>Drabek</x:Text>
+    <x:Text>08 Soltice GXP</x:Text>
+    <x:Text>AS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>857.86759590301949</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>34</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Randy Crouch</x:Text>
+    <x:Text>Randy Crouch BS</x:Text>
+    <x:Text>Randy</x:Text>
+    <x:Text>Crouch</x:Text>
+    <x:Text>03 Nissan</x:Text>
+    <x:Text>BS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>935.13937259579859</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>34</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>David Price</x:Text>
+    <x:Text>David Price SS</x:Text>
+    <x:Text>David</x:Text>
+    <x:Text>Price</x:Text>
+    <x:Text>05 Porsche Boxster S</x:Text>
+    <x:Text>SS</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>34</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Kristine Fuller</x:Text>
+    <x:Text>Kristine Fuller BP</x:Text>
+    <x:Text>Kristine</x:Text>
+    <x:Text>Fuller</x:Text>
+    <x:Text>72 Corvette</x:Text>
+    <x:Text>BP</x:Text>
+    <x:Number>775.53369895299829</x:Number>
+    <x:Number>700.01854860514391</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>34</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Pam Tone</x:Text>
+    <x:Text>Pam Tone HS</x:Text>
+    <x:Text>Pam</x:Text>
+    <x:Text>Tone</x:Text>
+    <x:Text>05 Mini Cooper</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>34</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Steve Slininger</x:Text>
+    <x:Text>Steve Slininger GS</x:Text>
+    <x:Text>Steve</x:Text>
+    <x:Text>Slininger</x:Text>
+    <x:Text>04 Mini Cooper S</x:Text>
+    <x:Text>GS</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>34</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Barry Packer</x:Text>
+    <x:Text>Barry Packer BP</x:Text>
+    <x:Text>Barry</x:Text>
+    <x:Text>Packer</x:Text>
+    <x:Text>72 Corvette</x:Text>
+    <x:Text>BP</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>869.27425628056346</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>34</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>78</x:ColLast>
+    <x:Text>Roger Christopherson</x:Text>
+    <x:Text>Roger Christopherson EM</x:Text>
+    <x:Text>Roger</x:Text>
+    <x:Text>Christopherson</x:Text>
+    <x:Text>69 Sprite</x:Text>
+    <x:Text>EM</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>34</x:Row>
+    <x:ColFirst>80</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>34</x:Row>
+    <x:ColFirst>82</x:ColFirst>
+    <x:ColLast>87</x:ColLast>
+    <x:Text>Tim Then</x:Text>
+    <x:Text>Tim Then SM</x:Text>
+    <x:Text>Tim</x:Text>
+    <x:Text>Then</x:Text>
+    <x:Text>90 BMW 325is</x:Text>
+    <x:Text>SM</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>34</x:Row>
+    <x:ColFirst>89</x:ColFirst>
+    <x:ColLast>89</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>35</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Brian Bunker</x:Text>
+    <x:Text>Brian Bunker ESP</x:Text>
+    <x:Text>Brian</x:Text>
+    <x:Text>Bunker</x:Text>
+    <x:Text>02 WRX Wagon</x:Text>
+    <x:Text>ESP</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>928.34848982945914</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>35</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Ken Kozol</x:Text>
+    <x:Text>Ken Kozol DS</x:Text>
+    <x:Text>Ken</x:Text>
+    <x:Text>Kozol</x:Text>
+    <x:Text>06 Speed 6</x:Text>
+    <x:Text>DS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>911.36874661560273</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>35</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Randy Crouch</x:Text>
+    <x:Text>Randy Crouch BS</x:Text>
+    <x:Text>Randy</x:Text>
+    <x:Text>Crouch</x:Text>
+    <x:Text>03 Nissan</x:Text>
+    <x:Text>BS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>956.2239791618241</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>35</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Katie Haugen</x:Text>
+    <x:Text>Katie Haugen STU</x:Text>
+    <x:Text>Katie</x:Text>
+    <x:Text>Haugen</x:Text>
+    <x:Text>08 WRX</x:Text>
+    <x:Text>STU</x:Text>
+    <x:Number>882.5244953823327</x:Number>
+    <x:Number>797.44968772221068</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>35</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Josh Graham</x:Text>
+    <x:Text>Josh Graham STS</x:Text>
+    <x:Text>Josh</x:Text>
+    <x:Text>Graham</x:Text>
+    <x:Text>90 240SX</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>847.0093849505613</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>35</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Kristine Fuller</x:Text>
+    <x:Text>Kristine Fuller BP</x:Text>
+    <x:Text>Kristine</x:Text>
+    <x:Text>Fuller</x:Text>
+    <x:Text>72 Corvette</x:Text>
+    <x:Text>BP</x:Text>
+    <x:Number>787.16272078166105</x:Number>
+    <x:Number>684.26028867926311</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>35</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>78</x:ColLast>
+    <x:Text>Jon Thompson</x:Text>
+    <x:Text>Jon Thompson DS</x:Text>
+    <x:Text>Jon</x:Text>
+    <x:Text>Thompson</x:Text>
+    <x:Text>Dodge SRT-4</x:Text>
+    <x:Text>DS</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>35</x:Row>
+    <x:ColFirst>80</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>36</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Barry Packer</x:Text>
+    <x:Text>Barry Packer BP</x:Text>
+    <x:Text>Barry</x:Text>
+    <x:Text>Packer</x:Text>
+    <x:Text>72 Corvette</x:Text>
+    <x:Text>BP</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>906.52623100694518</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>36</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Brian Fox</x:Text>
+    <x:Text>Brian Fox BSP</x:Text>
+    <x:Text>Brian</x:Text>
+    <x:Text>Fox</x:Text>
+    <x:Text>05 Subura Imprezza</x:Text>
+    <x:Text>BSP</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>36</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Matt Newberg</x:Text>
+    <x:Text>Matt Newberg STU</x:Text>
+    <x:Text>Matt</x:Text>
+    <x:Text>Newberg</x:Text>
+    <x:Text>04 RX8</x:Text>
+    <x:Text>STU</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>923.17515303373511</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>36</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Jared Fleck</x:Text>
+    <x:Text>Jared Fleck ESP</x:Text>
+    <x:Text>Jared</x:Text>
+    <x:Text>Fleck</x:Text>
+    <x:Text>03 MUSTANG</x:Text>
+    <x:Text>ESP</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>36</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Doyle Stewart</x:Text>
+    <x:Text>Doyle Stewart BS</x:Text>
+    <x:Text>Doyle</x:Text>
+    <x:Text>Stewart</x:Text>
+    <x:Text>03 350Z</x:Text>
+    <x:Text>BS</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>36</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>69</x:ColLast>
+    <x:Text>Jeff Christianson</x:Text>
+    <x:Text>Jeff Christianson EM</x:Text>
+    <x:Text>Jeff</x:Text>
+    <x:Text>Christianson</x:Text>
+    <x:Text>98 Westfield Sei</x:Text>
+    <x:Text>EM</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>36</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Ken Kozol</x:Text>
+    <x:Text>Ken Kozol DS</x:Text>
+    <x:Text>Ken</x:Text>
+    <x:Text>Kozol</x:Text>
+    <x:Text>06 MS Mazda 6</x:Text>
+    <x:Text>DS</x:Text>
+    <x:Number>905.77594100324177</x:Number>
+    <x:Number>891.63318918735729</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>37</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Paul Gilbert</x:Text>
+    <x:Text>Paul Gilbert DSP</x:Text>
+    <x:Text>Paul</x:Text>
+    <x:Text>Gilbert</x:Text>
+    <x:Text>95 Miata</x:Text>
+    <x:Text>DSP</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>903.37443200542123</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>37</x:Row>
+    <x:ColFirst>18</x:ColFirst>
+    <x:ColLast>25</x:ColLast>
+    <x:Text>Steve Schaeffer</x:Text>
+    <x:Text>Steve Schaeffer CSP</x:Text>
+    <x:Text>Steve</x:Text>
+    <x:Text>Schaeffer</x:Text>
+    <x:Text>91 Miata</x:Text>
+    <x:Text>CSP</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>37</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Dan Mesmer</x:Text>
+    <x:Text>Dan Mesmer BS</x:Text>
+    <x:Text>Dan</x:Text>
+    <x:Text>Mesmer</x:Text>
+    <x:Text>07 Nissan 350Z</x:Text>
+    <x:Text>BS</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>37</x:Row>
+    <x:ColFirst>46</x:ColFirst>
+    <x:ColLast>53</x:ColLast>
+    <x:Text>Michelle Beckwith</x:Text>
+    <x:Text>Michelle Beckwith FS</x:Text>
+    <x:Text>Michelle</x:Text>
+    <x:Text>Beckwith</x:Text>
+    <x:Text>06 Mustang GT</x:Text>
+    <x:Text>FS</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>37</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Scott Howard</x:Text>
+    <x:Text>Scott Howard FS</x:Text>
+    <x:Text>Scott</x:Text>
+    <x:Text>Howard</x:Text>
+    <x:Text>01 Firebird</x:Text>
+    <x:Text>FS</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>37</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Paul Gilbert</x:Text>
+    <x:Text>Paul Gilbert DSP</x:Text>
+    <x:Text>Paul</x:Text>
+    <x:Text>Gilbert</x:Text>
+    <x:Text>95 Miata</x:Text>
+    <x:Text>DSP</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>936.40859624415873</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>37</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>78</x:ColLast>
+    <x:Text>Brian Connell</x:Text>
+    <x:Text>Brian Connell DS</x:Text>
+    <x:Text>Brian</x:Text>
+    <x:Text>Connell</x:Text>
+    <x:Text>Dodge SRT-4</x:Text>
+    <x:Text>DS</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>37</x:Row>
+    <x:ColFirst>80</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>38</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>David Livingston</x:Text>
+    <x:Text>David Livingston BSP</x:Text>
+    <x:Text>David</x:Text>
+    <x:Text>Livingston</x:Text>
+    <x:Text>Mitsubishi 3000 GT</x:Text>
+    <x:Text>BSP</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>38</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>David DeWitt</x:Text>
+    <x:Text>David DeWitt BSP</x:Text>
+    <x:Text>David</x:Text>
+    <x:Text>DeWitt</x:Text>
+    <x:Text>87 RX-7</x:Text>
+    <x:Text>BSP</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>38</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Jack Norton</x:Text>
+    <x:Text>Jack Norton HS</x:Text>
+    <x:Text>Jack</x:Text>
+    <x:Text>Norton</x:Text>
+    <x:Text>97 Saturn SL2</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>38</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Brian Bunker</x:Text>
+    <x:Text>Brian Bunker ESP</x:Text>
+    <x:Text>Brian</x:Text>
+    <x:Text>Bunker</x:Text>
+    <x:Text>02 WRX Wagon</x:Text>
+    <x:Text>ESP</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>925.13034267931187</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>38</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Mike Whitney</x:Text>
+    <x:Text>Mike Whitney CS</x:Text>
+    <x:Text>Mike</x:Text>
+    <x:Text>Whitney</x:Text>
+    <x:Text>04 MS Miata WC</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>969.48091813033477</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>39</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Ken Kozol</x:Text>
+    <x:Text>Ken Kozol DS</x:Text>
+    <x:Text>Ken</x:Text>
+    <x:Text>Kozol</x:Text>
+    <x:Text>06 MS Mazda 6</x:Text>
+    <x:Text>DS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>868.90130304607828</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>39</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Ted Hesselman</x:Text>
+    <x:Text>Ted Hesselman SM</x:Text>
+    <x:Text>Ted</x:Text>
+    <x:Text>Hesselman</x:Text>
+    <x:Text>BMW 325</x:Text>
+    <x:Text>SM</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>39</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Josh Carlson</x:Text>
+    <x:Text>Josh Carlson HS</x:Text>
+    <x:Text>Josh</x:Text>
+    <x:Text>Carlson</x:Text>
+    <x:Text>95 Saturn SLI</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>39</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>71</x:ColLast>
+    <x:Text>Erik Shreiner</x:Text>
+    <x:Text>Erik Shreiner STS</x:Text>
+    <x:Text>Erik</x:Text>
+    <x:Text>Shreiner</x:Text>
+    <x:Text>03 SVT Focus</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>916.72657145897563</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>39</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Glenn Campbell</x:Text>
+    <x:Text>Glenn Campbell CS</x:Text>
+    <x:Text>Glenn</x:Text>
+    <x:Text>Campbell</x:Text>
+    <x:Text>99 Miata</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>974.34968674957429</x:Number>
+    <x:Number>944.61342888998138</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>40</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Craig Coleman</x:Text>
+    <x:Text>Craig Coleman FSP</x:Text>
+    <x:Text>Craig</x:Text>
+    <x:Text>Coleman</x:Text>
+    <x:Text>78 MGB</x:Text>
+    <x:Text>FSP</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>864.58745895197762</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>40</x:Row>
+    <x:ColFirst>27</x:ColFirst>
+    <x:ColLast>34</x:ColLast>
+    <x:Text>Robert Bishop</x:Text>
+    <x:Text>Robert Bishop STS</x:Text>
+    <x:Text>Robert</x:Text>
+    <x:Text>Bishop</x:Text>
+    <x:Text>02 Solara</x:Text>
+    <x:Text>STS</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>40</x:Row>
+    <x:ColFirst>55</x:ColFirst>
+    <x:ColLast>62</x:ColLast>
+    <x:Text>Pam Tone</x:Text>
+    <x:Text>Pam Tone HS</x:Text>
+    <x:Text>Pam</x:Text>
+    <x:Text>Tone</x:Text>
+    <x:Text>05 Mini Cooper</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>40</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>69</x:ColLast>
+    <x:Text>Larry Holland</x:Text>
+    <x:Text>Larry Holland SM</x:Text>
+    <x:Text>Larry</x:Text>
+    <x:Text>Holland</x:Text>
+    <x:Text>03 Evo 8</x:Text>
+    <x:Text>SM</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>40</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Cindyann Whitney</x:Text>
+    <x:Text>Cindyann Whitney CS</x:Text>
+    <x:Text>Cindyann</x:Text>
+    <x:Text>Whitney</x:Text>
+    <x:Text>04 MS Miata</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>937.49919324650534</x:Number>
+    <x:Number>908.88757861507008</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>41</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Jackie Phelps</x:Text>
+    <x:Text>Jackie Phelps GS</x:Text>
+    <x:Text>Jackie</x:Text>
+    <x:Text>Phelps</x:Text>
+    <x:Text>00 Celica</x:Text>
+    <x:Text>GS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>832.63425198287973</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>41</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>69</x:ColLast>
+    <x:Text>Dale Schumann</x:Text>
+    <x:Text>Dale Schumann BP</x:Text>
+    <x:Text>Dale</x:Text>
+    <x:Text>Schumann</x:Text>
+    <x:Text>91 Camaro</x:Text>
+    <x:Text>BP</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>41</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Dylan Campbell</x:Text>
+    <x:Text>Dylan Campbell CS</x:Text>
+    <x:Text>Dylan</x:Text>
+    <x:Text>Campbell</x:Text>
+    <x:Text>99 Miata</x:Text>
+    <x:Text>CS</x:Text>
+    <x:Number>920.15811278205047</x:Number>
+    <x:Number>892.07573200501838</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>42</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Ken Anderson</x:Text>
+    <x:Text>Ken Anderson SS</x:Text>
+    <x:Text>Ken</x:Text>
+    <x:Text>Anderson</x:Text>
+    <x:Text>07 Corvette</x:Text>
+    <x:Text>SS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>828.77469595731395</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>42</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>69</x:ColLast>
+    <x:Text>Jay Gates</x:Text>
+    <x:Text>Jay Gates STX</x:Text>
+    <x:Text>Jay</x:Text>
+    <x:Text>Gates</x:Text>
+    <x:Text>90 VW Corrado</x:Text>
+    <x:Text>STX</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>42</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Barry Packer</x:Text>
+    <x:Text>Barry Packer BP</x:Text>
+    <x:Text>Barry</x:Text>
+    <x:Text>Packer</x:Text>
+    <x:Text>72 Corvette</x:Text>
+    <x:Text>BP</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>911.12992249979857</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>43</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Ryan Altpeter</x:Text>
+    <x:Text>Ryan Altpeter BS</x:Text>
+    <x:Text>Ryan</x:Text>
+    <x:Text>Altpeter</x:Text>
+    <x:Text>03 Nissan</x:Text>
+    <x:Text>BS</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>43</x:Row>
+    <x:ColFirst>64</x:ColFirst>
+    <x:ColLast>69</x:ColLast>
+    <x:Text>Eric Ireland</x:Text>
+    <x:Text>Eric Ireland BS</x:Text>
+    <x:Text>Eric</x:Text>
+    <x:Text>Ireland</x:Text>
+    <x:Text>97 BMW M3</x:Text>
+    <x:Text>BS</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>43</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Kristine Fuller</x:Text>
+    <x:Text>Kristine Fuller BP</x:Text>
+    <x:Text>Kristine</x:Text>
+    <x:Text>Fuller</x:Text>
+    <x:Text>72 Corvette</x:Text>
+    <x:Text>BP</x:Text>
+    <x:Number>774.85789517679507</x:Number>
+    <x:Number>705.99621398079034</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>44</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Mark DeWitt</x:Text>
+    <x:Text>Mark DeWitt HS</x:Text>
+    <x:Text>Mark</x:Text>
+    <x:Text>DeWitt</x:Text>
+    <x:Text>02 Focus</x:Text>
+    <x:Text>HS</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>44</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Randy Crouch</x:Text>
+    <x:Text>Randy Crouch BS</x:Text>
+    <x:Text>Randy</x:Text>
+    <x:Text>Crouch</x:Text>
+    <x:Text>03 Nissan</x:Text>
+    <x:Text>BS</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>936.61751406829615</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>45</x:Row>
+    <x:ColFirst>9</x:ColFirst>
+    <x:ColLast>16</x:ColLast>
+    <x:Text>Corey Wolfe</x:Text>
+    <x:Text>Corey Wolfe SM</x:Text>
+    <x:Text>Corey</x:Text>
+    <x:Text>Wolfe</x:Text>
+    <x:Text>02 Impreza WRX</x:Text>
+    <x:Text>SM</x:Text>
+    <x:Text></x:Text>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>45</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Brian Bunker</x:Text>
+    <x:Text>Brian Bunker ESP</x:Text>
+    <x:Text>Brian</x:Text>
+    <x:Text>Bunker</x:Text>
+    <x:Text>02 WRX Wagon</x:Text>
+    <x:Text>ESP</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>903.17500214631036</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>46</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Paul Gilbert</x:Text>
+    <x:Text>Paul Gilbert DSP</x:Text>
+    <x:Text>Paul</x:Text>
+    <x:Text>Gilbert</x:Text>
+    <x:Text>95 Miata</x:Text>
+    <x:Text>DSP</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>897.16564689556674</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>47</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text>Craig Coleman</x:Text>
+    <x:Text>Craig Coleman FSP</x:Text>
+    <x:Text>Craig</x:Text>
+    <x:Text>Coleman</x:Text>
+    <x:Text>78 MGB</x:Text>
+    <x:Text>FSP</x:Text>
+    <x:Number>1000</x:Number>
+    <x:Number>878.52534079818338</x:Number>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>48</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>78</x:ColLast>
+    <x:Text>David DeWitt</x:Text>
+    <x:Text>David DeWitt BSP</x:Text>
+    <x:Text>David</x:Text>
+    <x:Text>DeWitt</x:Text>
+    <x:Text>87 RX-7</x:Text>
+    <x:Text>BSP</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>48</x:Row>
+    <x:ColFirst>80</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>49</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>78</x:ColLast>
+    <x:Text>Diego Villalpando</x:Text>
+    <x:Text>Diego Villalpando SM2</x:Text>
+    <x:Text>Diego</x:Text>
+    <x:Text>Villalpando</x:Text>
+    <x:Text>05 RX8</x:Text>
+    <x:Text>SM2</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>49</x:Row>
+    <x:ColFirst>80</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>50</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>78</x:ColLast>
+    <x:Text>George Criswell</x:Text>
+    <x:Text>George Criswell BS</x:Text>
+    <x:Text>George</x:Text>
+    <x:Text>Criswell</x:Text>
+    <x:Text>03 350Z</x:Text>
+    <x:Text>BS</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>50</x:Row>
+    <x:ColFirst>80</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>51</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>78</x:ColLast>
+    <x:Text>Zayeir Bent</x:Text>
+    <x:Text>Zayeir Bent SM2</x:Text>
+    <x:Text>Zayeir</x:Text>
+    <x:Text>Bent</x:Text>
+    <x:Text>05 RX8</x:Text>
+    <x:Text>SM2</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>51</x:Row>
+    <x:ColFirst>80</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>52</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>78</x:ColLast>
+    <x:Text>Pam Tone</x:Text>
+    <x:Text>Pam Tone HS</x:Text>
+    <x:Text>Pam</x:Text>
+    <x:Text>Tone</x:Text>
+    <x:Text>05 Mini Cooper</x:Text>
+    <x:Text>HS</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>52</x:Row>
+    <x:ColFirst>80</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>53</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>78</x:ColLast>
+    <x:Text>Laurence Weissbrot</x:Text>
+    <x:Text>Laurence Weissbrot STU</x:Text>
+    <x:Text>Laurence</x:Text>
+    <x:Text>Weissbrot</x:Text>
+    <x:Text>04 RX8</x:Text>
+    <x:Text>STU</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>53</x:Row>
+    <x:ColFirst>80</x:ColFirst>
+    <x:ColLast>80</x:ColLast>
+    <x:Text> </x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>54</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>78</x:ColLast>
+    <x:Text>Aimee Laughlin</x:Text>
+    <x:Text>Aimee Laughlin EML</x:Text>
+    <x:Text>Aimee</x:Text>
+    <x:Text>Laughlin</x:Text>
+    <x:Text>69 Sprite</x:Text>
+    <x:Text>EML</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>55</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>78</x:ColLast>
+    <x:Text>Brian May</x:Text>
+    <x:Text>Brian May SM2</x:Text>
+    <x:Text>Brian</x:Text>
+    <x:Text>May</x:Text>
+    <x:Text>88 RX7</x:Text>
+    <x:Text>SM2</x:Text>
+   </x:Crn>
+   <x:Crn>
+    <x:Row>56</x:Row>
+    <x:ColFirst>73</x:ColFirst>
+    <x:ColLast>78</x:ColLast>
+    <x:Text>Steve May</x:Text>
+    <x:Text>Steve May SM2</x:Text>
+    <x:Text>Steve</x:Text>
+    <x:Text>May</x:Text>
+    <x:Text>91 RX7</x:Text>
+    <x:Text>SM2</x:Text>
+   </x:Crn>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>34</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>35</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>36</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>37</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>38</x:SheetIndex>
+  </x:Xct>
+  <x:Xct>
+   <x:Count>0</x:Count>
+   <x:SheetIndex>39</x:SheetIndex>
+  </x:Xct>
+ </x:SupBook>
+</xml><![endif]-->
+</head>
+
+<frameset rows="*,39" border=0 width=0 frameborder=no framespacing=0>
+ <frame src="./index_files/sheet001.htm" name="frSheet">
+ <frame src="./index_files/tabstrip.htm" name="frTabs" marginwidth=0 marginheight=0>
+ <noframes>
+  <body>
+   <p>This page uses frames, but your browser doesn't support them.</p>
+  </body>
+ </noframes>
+</frameset>
+</html>
