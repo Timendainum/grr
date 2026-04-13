@@ -1,118 +1,120 @@
+/* ── Narrow / Mobile (max-width: 600px) ── */
+
 html, body {
-	font-size: 1.0em; 
+	font-size: 1.0em;
 	font-family: 'Exo 2', sans-serif;
-	background: #ffffff;
-	}
+}
 
 #title {
-	height: 80px; 
-	width: 300px;
-	}
+	width: 100%;
+	padding: 16px 12px;
+	text-align: center;
+}
 	#title h1 {
 		font-size: 1.8em;
 		font-weight: 700;
-		margin: 10px 0 0 0;
+		margin: 0;
 		text-align: center;
-		text-indent: 0px; 
-		}
+	}
 	#title h2 {
-		font-size: 1.2em;
+		font-size: 0.8em;
 		font-weight: 700;
-		margin: 0 0 0 0;
+		margin: 4px 0 0 0;
 		text-align: center;
-		text-indent: 0px; 
-		}
+	}
 
 #social {
 	display: none;
-	}
+}
 
 #navi1 {
 	display: none;
-	}
+}
 
 #navi2 {
-	height: 65px; 
-	width: 300px;
-	}
+	width: 100%;
+	overflow: hidden;
+}
 	#navi2 a {
-		width: 150px;
-		}
+		width: 50%;
+	}
 
 #buttons {
 	display: none;
-	}
-
-#resultsbutton {
-	margin: auto;
-	list-style: none;
-	height: 20px;
-	width: 300px;
-	}
-	#resultsbutton li {
-		float: left;
-		padding: 5px 0 5px 0;
-		}
-	#resultsbutton a {
-		display: block;
-		width: 300px;
-		line-height: 21px;
-		height: 23px;
-		text-align: center;
-		font-size: 1.0em;
-		font-weight: 400;
-		text-decoration: none;
-		color: #CC0000;
-		background-color: rgba(102,102,102,0.2);
-		border: none;
-		}
-	#resultsbutton a:hover {
-		font-weight: 700;
-		}
+}
 
 #content {
-	width: 290px;
-	}
+	width: calc(100% - 16px);
+	margin: 12px auto;
+	padding: 20px 16px;
+}
 	#content h1 {
 		font-size: 1.8em;
 		font-weight: 700;
-		}
+		color: #1a1a2e;
+	}
 	#content h2 {
-		font-size: .9em;
+		font-size: 0.9em;
 		font-weight: 400;
-		line-height: 1.4em;
-		}
+		line-height: 1.6em;
+		margin: 6px 0;
+	}
 	#content h3 {
 		font-size: 1.5em;
 		font-weight: 700;
-		}
+		color: #1a1a2e;
+		margin-top: 20px;
+		margin-bottom: 6px;
+	}
 	#content h4 {
-		font-size: .8em;
+		font-size: 0.95em;
 		font-weight: 700;
 		text-align: left;
-		}
+		color: #1a1a2e;
+		margin: 14px 0 4px 0;
+		padding-bottom: 4px;
+		border-bottom: 1px solid #eee;
+	}
 	#content h5 {
-		font-size: .8em;
+		font-size: 0.85em;
 		font-weight: 400;
 		text-align: left;
-		}
+		line-height: 1.5;
+	}
 	#content h6 {
-		font-size: .8em;
+		font-size: 0.85em;
 		font-weight: 400;
 		text-align: left;
 		text-indent: 10px;
-		line-height: 0px;
-		}
+		line-height: 1.4em;
+		margin: 4px 0;
+		color: #555;
+	}
 	#content h7 {
-		font-size: .8em;
+		font-size: 0.85em;
 		font-weight: 700;
 		color: #CC0000;
-		}
+	}
 
 #footer {
-	width: 300px;
-	}
+	width: 100%;
+}
 
 table#schedule1 {
 	display: none;
+}
+
+table#schedule2 {
+	width: 100%;
+}
+
+#resultsbutton {
+	width: 100%;
+	overflow: hidden;
+}
+	#resultsbutton li {
+		width: 100%;
+	}
+	#resultsbutton a {
+		width: 100%;
 	}

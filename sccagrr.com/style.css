@@ -1,204 +1,240 @@
-html, body {
-	font-size: 1.0em; 
-	font-family: 'Exo 2', sans-serif;
-	background: #ffffff;
-	}
+/* ── Base Reset & Typography ── */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
 
+html, body {
+	font-size: 1.0em;
+	font-family: 'Exo 2', sans-serif;
+	background: #f5f5f5;
+	margin: 0;
+	padding: 0;
+	color: #333333;
+	-webkit-font-smoothing: antialiased;
+}
+
+a {
+	color: #CC0000;
+	transition: color 0.2s ease;
+}
+a:hover {
+	color: #990000;
+}
+
+p {
+	line-height: 1.6;
+	margin: 0.8em 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* ── Title / Header ── */
 #title {
 	margin: auto;
 	display: block;
-	background-color: rgba(102,102,102,0.2);
-	border: solid;
-	border-width: 5px 0 5px 0;
-	border-color: #ffffff;
-	}
+	background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+	border-bottom: 4px solid #CC0000;
+	position: relative;
+}
 	#title h1 {
-		color: #CC0000;
+		color: #ffffff;
 		font-style: italic;
-		text-shadow: 0px 2px 3px #555555;
-		}
-	#title h2 {
-		color: #333333;
-		font-style: normal;
-		text-shadow: 0px 2px 3px #555555;
-		}
-
-#social {
-	margin: -68px 0 0 487px;
-	height: 32px; width: 110px;
-	list-style: none;
+		text-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+		margin-bottom: 0;
+		letter-spacing: 0.5px;
 	}
+	#title h2 {
+		color: rgba(255,255,255,0.7);
+		font-style: normal;
+		text-shadow: none;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		font-size: 0.9em;
+	}
+
+/* ── Social Icons ── */
+#social {
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+	height: 32px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
 	#social li {
 		float: left;
-		}
+	}
 	#social a {
 		display: block;
-		padding: 0 2px 0 2px;
-		}
+		padding: 0 4px;
+		opacity: 0.8;
+		transition: opacity 0.2s ease, transform 0.2s ease;
+	}
+	#social a:hover {
+		opacity: 1;
+		transform: scale(1.1);
+	}
 
-#navi1 {
+/* ── Navigation (shared) ── */
+#navi1, #navi2 {
 	margin: auto;
 	list-style: none;
-	}
-	#navi1 li {
+	background: #ffffff;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+	#navi1 li, #navi2 li {
 		float: left;
-		}
-	#navi1 a {
+	}
+	#navi1 a, #navi2 a {
 		display: block;
-		line-height: 27px;
-		height: 28px;
+		line-height: 44px;
+		height: 48px;
 		text-align: center;
-		font-size: 1.2em;
+		font-size: 1.05em;
 		font-weight: 400;
 		text-decoration: none;
-		color: #333333;
-		background-color: rgba(102,102,102,0.2);
-		border-bottom: solid;
-		border-bottom-color: #666666;
-		border-bottom-width: 7px;
-		}
-	#navi1 a:hover {
-		border-bottom: solid;
-		border-color: #CC0000;
-		border-width: 7px;
-		}
-	#active a {
-		border-bottom: solid;
-		border-color: #CC0000;
-		border-width: 7px;
-		}
-
-#navi2 {
-	margin: auto;
-	list-style: none;
+		color: #444444;
+		background-color: #ffffff;
+		border-bottom: 3px solid transparent;
+		transition: all 0.25s ease;
 	}
-	#navi2 li {
-		float: left;
-		}
-	#navi2 a {
-		display: block;
-		line-height: 27px;
-		height: 28px;
-		text-align: center;
-		font-size: 1.2em;
-		font-weight: 400;
-		text-decoration: none;
-		color: #333333;
-		background-color: rgba(102,102,102,0.2);
-		border-bottom: solid;
-		border-bottom-color: #666666;
-		border-bottom-width: 7px;
-		}
-	#navi2 a:hover {
-		border-bottom: solid;
-		border-color: #CC0000;
-		border-width: 7px;
-		}
+	#navi1 a:hover, #navi2 a:hover {
+		color: #CC0000;
+		border-bottom: 3px solid #CC0000;
+		background-color: #fafafa;
+	}
 	#active a {
-		border-bottom: solid;
-		border-color: #CC0000;
-		border-width: 7px;
-		}
+		color: #CC0000;
+		font-weight: 700;
+		border-bottom: 3px solid #CC0000;
+	}
 
+/* ── Sub-buttons ── */
 #buttons {
 	margin: auto;
 	list-style: none;
-	}
+	background: #fafafa;
+	border-bottom: 1px solid #eee;
+}
 	#buttons li {
 		float: left;
-		padding: 5px 0 5px 0;
-		}
+		padding: 0;
+	}
 	#buttons a {
 		display: block;
-		line-height: 21px;
-		height: 23px;
+		line-height: 36px;
+		height: 36px;
 		text-align: center;
-		font-size: 1.0em;
-		font-weight: 400;
+		font-size: 0.95em;
+		font-weight: 500;
 		text-decoration: none;
 		color: #CC0000;
-		background-color: rgba(102,102,102,0.2);
+		background-color: #fafafa;
 		border: none;
-		}
+		transition: all 0.2s ease;
+	}
 	#buttons a:hover {
+		background-color: #f0f0f0;
 		font-weight: 700;
-		}
-	#active a {
-		font-weight: 700;
-		}
+	}
 
+/* ── Content ── */
 #content {
 	text-align: center;
 	display: block;
-	margin: auto;
-	padding: 2px 0 2px 0;
+	margin: 20px auto;
+	padding: 30px 24px;
 	text-decoration: none;
 	color: #333333;
 	background-color: #ffffff;
 	border: none;
-	}
-		
+	border-radius: 8px;
+	box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+}
+
+/* ── Footer ── */
 #footer {
 	margin: auto;
 	display: block;
 	text-align: center;
-	padding: 2px;
-	font-size: 0.8em;
+	padding: 16px 8px;
+	font-size: 0.85em;
 	font-weight: 400;
 	text-decoration: none;
+	color: #888888;
+}
+
+/* ── Schedule Tables ── */
+table#schedule1, table#schedule2 {
+	background: #fff;
+	border-collapse: collapse;
+	text-align: center;
+	border-radius: 6px;
+	overflow: hidden;
+}
+table#schedule1 th, table#schedule2 th {
+	font-size: 0.85em;
+	font-weight: 700;
+	color: #ffffff;
+	padding: 12px 10px;
+	background: #1a1a2e;
+	border-bottom: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+table#schedule1 td, table#schedule2 td {
+	font-size: 0.9em;
 	color: #333333;
-	}
-
-table#schedule1 {
-	background: #fff;
-	width: 510px;
-	border-collapse: collapse;
-	text-align: center;
-	}
-table#schedule1 th {
-	font-size: 1.2em;
-	font-weight: bold;
-	color: #000000;
-	padding: 5px 5px;
-	border-bottom: 4px solid #cc0000;
-	}
-table#schedule1 td {
-	font-size: 0.9em;
-	color: #000000;
-	padding: 8px 0 8px 0;
-	border-bottom: 2px solid gray;
-	}
+	padding: 12px 8px;
+	border-bottom: 1px solid #eee;
+}
 	td a {
 		text-decoration: none;
-		color: #000;
-		}
-table#schedule1 tbody tr:hover td, td a:hover {
-	color: #cc0000;
+		color: #333;
+		transition: color 0.2s ease;
+	}
+table#schedule1 tbody tr:hover td,
+table#schedule1 tbody tr:hover td a,
+table#schedule2 tbody tr:hover td,
+table#schedule2 tbody tr:hover td a {
+	color: #CC0000;
+	background-color: #fef7f7;
+}
+
+/* ── Results Buttons ── */
+#resultsbutton {
+	margin: auto;
+	list-style: none;
+}
+	#resultsbutton li {
+		float: left;
+		padding: 5px 0;
+	}
+	#resultsbutton a {
+		display: block;
+		line-height: 36px;
+		height: 36px;
+		text-align: center;
+		font-size: 0.95em;
+		font-weight: 500;
+		text-decoration: none;
+		color: #CC0000;
+		background-color: #fafafa;
+		border: none;
+		border-radius: 4px;
+		transition: all 0.2s ease;
+	}
+	#resultsbutton a:hover {
+		background-color: #f0f0f0;
+		font-weight: 700;
 	}
 
-table#schedule2 {
-	background: #fff;
-	width: 300px;
-	border-collapse: collapse;
-	text-align: center;
-	}
-table#schedule2 th {
-	font-size: 1.2em;
-	font-weight: bold;
-	color: #000000;
-	padding: 5px 5px;
-	border-bottom: 4px solid #cc0000;
-	}
-table#schedule2 td {
-	font-size: 0.9em;
-	color: #000000;
-	padding: 8px 0 8px 0;
-	border-bottom: 2px solid gray;
-	}
-	td a {
-		text-decoration: none;
-		color: #000;
-		}
-table#schedule2 tbody tr:hover td, td a:hover {
-	color: #cc0000;
-	}
+/* ── Utility ── */
+center {
+	display: block;
+}
