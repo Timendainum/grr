@@ -102,8 +102,7 @@ html, body {
 }
 
 table#schedule1 {
-	width: 100%;
-	max-width: 700px;
+	width: auto;
 }
 
 table#schedule2 {

@@ -186,17 +186,20 @@ table#schedule1 th, table#schedule2 th {
 	border-bottom: none;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	white-space: nowrap;
 }
 table#schedule1 td, table#schedule2 td {
 	font-size: 0.9em;
 	color: #333333;
 	padding: 12px 8px;
 	border-bottom: 1px solid #eee;
+	white-space: nowrap;
 }
 	td a {
 		text-decoration: none;
 		color: #333;
 		transition: color 0.2s ease;
+		white-space: nowrap;
 	}
 table#schedule1 tbody tr:hover td,
 table#schedule1 tbody tr:hover td a,

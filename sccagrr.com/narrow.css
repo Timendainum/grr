@@ -106,6 +106,8 @@ table#schedule1 {
 
 table#schedule2 {
 	width: 100%;
+	display: block;
+	overflow-x: auto;
 }
 
 #resultsbutton {
